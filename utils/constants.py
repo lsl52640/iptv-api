@@ -33,13 +33,7 @@ ipv4_result_path = os.path.join(output_dir, "ipv4/result.txt")
 
 ipv6_result_path = os.path.join(output_dir, "ipv6/result.txt")
 
-rtmp_data_path = os.path.join(output_dir, "data/rtmp.db")
 
-hls_result_path = os.path.join(output_dir, "hls.txt")
-
-hls_ipv4_result_path = os.path.join(output_dir, "ipv4/hls.txt")
-
-hls_ipv6_result_path = os.path.join(output_dir, "ipv6/hls.txt")
 
 cache_path = os.path.join(output_dir, "data/cache.gz")
 

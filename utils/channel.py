@@ -38,6 +38,7 @@ from utils.tools import (
     get_url_host,
     check_ipv_type_match,
     convert_to_m3u,
+    convert_to_json_v1,
     custom_print,
     get_name_uri_from_dir,
     get_resolution_value,
@@ -63,7 +64,6 @@ min_resolution_value = config.min_resolution_value
 resolution_speed_map = config.resolution_speed_map
 open_history = config.open_history
 open_local = config.open_local
-open_rtmp = config.open_rtmp
 retain_origin = ["whitelist", "hls"]
 
 _TOTAL_URLS_CACHE_MAX_SIZE = 2048
@@ -295,13 +295,7 @@ def get_channel_data_from_file(channels, file, whitelist_maps, blacklist,
                 if unmatch_local_urls:
                     append_unmatch_data(local_name, unmatch_local_urls)
 
-        if hls_data and open_rtmp:
-            for hls_name, hls_urls in hls_data.items():
-                if hls_name in matched_hls_names:
-                    continue
-                unmatch_hls_urls = [format_channel_data(hls_url, "hls") for hls_url in hls_urls]
-                if unmatch_hls_urls:
-                    append_unmatch_data(hls_name, unmatch_hls_urls)
+
     return channels
 
 
@@ -312,8 +306,6 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
     user_source_file = resource_path(config.source_file)
     channels = defaultdict(lambda: defaultdict(list))
     hls_data = None
-    if config.open_rtmp:
-        hls_data = get_name_uri_from_dir(constants.hls_path)
     local_paths = build_path_list(constants.local_dir_path)
     local_data = get_name_urls_from_file([get_real_path(constants.local_path)] + local_paths)
     whitelist_count = get_whitelist_total_count(whitelist_maps)
@@ -617,9 +609,7 @@ def append_old_data_to_info_data(info_data, cate, name, data, whitelist_maps=Non
         local_data = [item for item in data if item["origin"] == "local"]
         append_and_print(local_data, "local", t("name.local"))
 
-    if open_rtmp:
-        hls_data = [item for item in data if item["origin"] == "hls"]
-        append_and_print(hls_data, None, t("name.hls"))
+
 
     if open_history:
         history_data = [item for item in data if item["origin"] not in ["hls", "local", "whitelist"]]
@@ -1105,29 +1095,24 @@ def process_write_content(
         else:
             content += f"\n\n{update_title},#genre#\n{now},{value}"
     try:
-        target_dir = os.path.dirname(path) or "."
+        json_data = convert_to_json_v1(content=content)
+        json_path = os.path.splitext(path)[0] + ".json"
+        target_dir = os.path.dirname(json_path) or "."
         os.makedirs(target_dir, exist_ok=True)
         with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", delete=False, dir=target_dir,
-                                         prefix=os.path.basename(path) + ".tmp.") as tmpf:
-            tmpf.write(content)
+                                          prefix=os.path.basename(json_path) + ".tmp.") as tmpf:
+            import json
+            json.dump(json_data, tmpf, ensure_ascii=False, indent=4)
             tmp_path = tmpf.name
-        os.replace(tmp_path, path)
+        os.replace(tmp_path, json_path)
         try:
-            os.chmod(path, 0o644)
+            os.chmod(json_path, 0o644)
         except Exception:
             pass
-    except Exception:
-        try:
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(content)
-        except Exception as e:
-            print(t("msg.write_error").format(info=e), flush=True)
-            return
-    try:
-        convert_to_m3u(path, first_channel_name, data=result_data, content=content)
         _WRITTEN_CONTENT_DIGESTS[path] = render_signature
     except Exception as e:
-        print(t("msg.write_error").format(info=f"convert m3u error: {e}"), flush=True)
+        print(t("msg.write_error").format(info=f"convert json error: {e}"), flush=True)
+        return False
     return True
 
 
@@ -1143,68 +1128,22 @@ def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=
         if any(pref == "auto" for pref in ipv_type_prefer):
             ipv_type_prefer = ["ipv6", "ipv4"] if ipv6 else ["ipv4", "ipv6"]
         origin_type_prefer = config.origin_type_prefer
-        hls_url = f"{get_public_url()}/hls"
         file_list = [
-            {"path": config.final_file, "enable_log": True},
-            {"path": constants.ipv4_result_path, "ipv_type_prefer": ["ipv4"]},
-            {"path": constants.ipv6_result_path, "ipv_type_prefer": ["ipv6"]}
+            {"path": config.final_file, "enable_log": True}
         ]
-        if config.open_rtmp and not os.getenv("GITHUB_ACTIONS"):
-            file_list += [
-                {"path": constants.hls_result_path, "hls_url": hls_url},
-                {
-                    "path": constants.hls_ipv4_result_path,
-                    "hls_url": hls_url,
-                    "ipv_type_prefer": ["ipv4"]
-                },
-                {
-                    "path": constants.hls_ipv6_result_path,
-                    "hls_url": hls_url,
-                    "ipv_type_prefer": ["ipv6"]
-                },
-            ]
-            rtmp_rows = {}
-            unmatch_category = t("content.unmatch_channel")
-            for file in file_list:
-                if not file.get("hls_url"):
-                    continue
-                file_ipv_type_prefer = file.get("ipv_type_prefer", ipv_type_prefer)
-                for cate, channel_obj in data.items():
-                    for info_list in channel_obj.values():
-                        channel_urls = _get_total_urls_cached(
-                            info_list,
-                            file_ipv_type_prefer,
-                            origin_type_prefer,
-                            ["hls"],
-                            apply_limit=cate != unmatch_category,
-                        )
-                        for item in channel_urls:
-                            item_id = item.get("id")
-                            if item_id is not None:
-                                rtmp_rows[str(item_id)] = item
-        hls_changed = False
+
         for file in file_list:
-            target_dir = os.path.dirname(file["path"])
-            if target_dir:
-                os.makedirs(target_dir, exist_ok=True)
-            changed = process_write_content(
+            process_write_content(
                 path=file["path"],
                 data=data,
-                hls_url=file.get("hls_url"),
+                hls_url=None,
                 open_empty_category=open_empty_category,
-                ipv_type_prefer=file.get("ipv_type_prefer", ipv_type_prefer),
+                ipv_type_prefer=ipv_type_prefer,
                 origin_type_prefer=origin_type_prefer,
                 first_channel_name=first_channel_name,
                 enable_log=file.get("enable_log", False),
                 is_last=is_last
             )
-            if file.get("hls_url") and changed:
-                hls_changed = True
-        if hls_changed:
-            try:
-                sync_result_data(constants.rtmp_data_path, rtmp_rows.values())
-            except Exception as e:
-                print(t("msg.write_error").format(info=e), flush=True)
         if not skip_print:
             print(t("msg.write_success"), flush=True)
     except Exception as e:

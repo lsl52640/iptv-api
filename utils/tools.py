@@ -525,6 +525,63 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None, content=None):
             os.replace(tmp_path, m3u_file_path)
 
 
+def convert_to_json_v1(path=None, content=None):
+    """
+    Convert result txt to v1 json format
+    """
+    result = []
+    if content is not None or (path and os.path.exists(path)):
+        source = io.StringIO(content) if content is not None else open(path, "r", encoding="utf-8")
+        with source as file:
+            current_group = None
+            logo_url = get_logo_url()
+            from_fanmingming = "https://raw.githubusercontent.com/fanmingming/live/main/tv" in logo_url
+            channels_map = {}
+            
+            for line in file:
+                trimmed_line = line.strip()
+                if trimmed_line != "":
+                    if "#genre#" in trimmed_line:
+                        current_group = trimmed_line.replace(",#genre#", "").strip()
+                    else:
+                        try:
+                            original_channel_name, _, channel_link = map(
+                                str.strip, trimmed_line.partition(",")
+                            )
+                        except:
+                            continue
+                        
+                        if current_group in (t("content.update_time"), t("content.update_running")):
+                            continue
+                            
+                        processed_channel_name = original_channel_name
+                        if from_fanmingming:
+                            processed_channel_name = re.sub(
+                                r"(CCTV|CETV)-(\d+)(\+.*)?",
+                                lambda m: f"{m.group(1)}{m.group(2)}"
+                                          + ("+" if m.group(3) else ""),
+                                original_channel_name,
+                            )
+                        tvg_id = get_channel_epg_id(original_channel_name) or processed_channel_name
+                        
+                        channel_logo = join_url(logo_url, f"{processed_channel_name}.{config.logo_type}")
+                        
+                        key = (original_channel_name, current_group)
+                        if key not in channels_map:
+                            channels_map[key] = {
+                                "name": original_channel_name,
+                                "tvg_id": tvg_id,
+                                "tvg_name": processed_channel_name,
+                                "tvg_logo": channel_logo,
+                                "group": current_group or "",
+                                "url": []
+                            }
+                        channels_map[key]["url"].append(channel_link)
+            result = list(channels_map.values())
+            
+    return result
+
+
 def get_result_file_content(path=None, show_content=False, file_type=None):
     """
     Get the content of the result file
@@ -1085,7 +1142,6 @@ def render_nginx_conf(nginx_conf_template, nginx_conf):
 
     content = content.replace('${APP_PORT}', str(config.app_port))
     content = content.replace('${NGINX_HTTP_PORT}', str(config.nginx_http_port))
-    content = content.replace('${NGINX_RTMP_PORT}', str(config.nginx_rtmp_port))
 
     with open(nginx_conf, 'w', encoding='utf-8') as f:
         f.write(content)

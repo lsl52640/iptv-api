@@ -49,7 +49,7 @@ class ConfigManager:
 
     @property
     def open_service(self):
-        return self.config.getboolean("Settings", "open_service", fallback=True)
+        return False
 
     @property
     def open_update(self):
@@ -209,13 +209,6 @@ class ConfigManager:
     def app_port(self):
         return self.config.getint("Settings", "app_port", fallback=5180)
 
-    @property
-    def nginx_http_port(self):
-        return self.config.getint("Settings", "nginx_http_port", fallback=8080)
-
-    @property
-    def nginx_rtmp_port(self):
-        return self.config.getint("Settings", "nginx_rtmp_port", fallback=1935)
 
     @property
     def open_supply(self):
@@ -260,7 +253,7 @@ class ConfigManager:
 
     @property
     def open_rtmp(self):
-        return not os.getenv("GITHUB_ACTIONS") and self.config.getboolean("Settings", "open_rtmp", fallback=True)
+        return False
 
     @property
     def open_headers(self):
@@ -345,17 +338,7 @@ class ConfigManager:
     def open_subscribe_logo(self):
         return self.config.getboolean("Settings", "open_subscribe_logo", fallback=True)
 
-    @property
-    def rtmp_idle_timeout(self):
-        return self.config.getint("Settings", "rtmp_idle_timeout", fallback=300)
 
-    @property
-    def rtmp_max_streams(self):
-        return self.config.getint("Settings", "rtmp_max_streams", fallback=10)
-
-    @property
-    def rtmp_transcode_mode(self):
-        return (self.config.get("Settings", "rtmp_transcode_mode", fallback="copy") or "copy").lower()
 
     @property
     def public_scheme(self):
@@ -387,7 +370,7 @@ class ConfigManager:
                 return int(env)
             except ValueError:
                 return env
-        return self.nginx_http_port if self.open_rtmp else self.app_port
+        return self.app_port
 
     @property
     def language(self):

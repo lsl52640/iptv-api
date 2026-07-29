@@ -1,7 +1,6 @@
 dist
 build
 docs
-tkinter_ui
 **/*.log
 **/*.md
 static/images
