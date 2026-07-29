@@ -205,10 +205,6 @@ class ConfigManager:
     def open_empty_category(self):
         return self.config.getboolean("Settings", "open_empty_category", fallback=True)
 
-    @property
-    def app_port(self):
-        return self.config.getint("Settings", "app_port", fallback=5180)
-
 
     @property
     def open_supply(self):
@@ -370,7 +366,7 @@ class ConfigManager:
                 return int(env)
             except ValueError:
                 return env
-        return self.app_port
+        return 5180
 
     @property
     def language(self):
@@ -409,6 +405,30 @@ class ConfigManager:
     @property
     def open_auto_disable_source(self):
         return self.config.getboolean("Settings", "open_auto_disable_source", fallback=False)
+
+    @property
+    def open_pg(self):
+        return self.config.getboolean("Settings", "open_pg", fallback=False)
+
+    @property
+    def pg_host(self):
+        return self.config.get("Settings", "pg_host", fallback="127.0.0.1")
+
+    @property
+    def pg_port(self):
+        return self.config.getint("Settings", "pg_port", fallback=5432)
+
+    @property
+    def pg_user(self):
+        return self.config.get("Settings", "pg_user", fallback="postgres")
+
+    @property
+    def pg_password(self):
+        return self.config.get("Settings", "pg_password", fallback="postgres")
+
+    @property
+    def pg_database(self):
+        return self.config.get("Settings", "pg_database", fallback="iptv")
 
     def load(self):
         """

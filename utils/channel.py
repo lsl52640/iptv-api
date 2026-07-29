@@ -14,7 +14,6 @@ from typing import cast
 import utils.constants as constants
 from utils.alias import Alias
 from utils.config import config
-from utils.db import sync_result_data
 from utils.ffmpeg import check_ffmpeg_installed_status
 from utils.frozen import is_url_frozen, mark_url_bad, mark_url_good
 from utils.i18n import t
@@ -37,10 +36,8 @@ from utils.tools import (
     get_datetime_now,
     get_url_host,
     check_ipv_type_match,
-    convert_to_m3u,
     convert_to_json_v1,
     custom_print,
-    get_name_uri_from_dir,
     get_resolution_value,
     get_public_url,
     build_path_list,
@@ -1110,6 +1107,9 @@ def process_write_content(
         except Exception:
             pass
         _WRITTEN_CONTENT_DIGESTS[path] = render_signature
+        if config.open_pg:
+            from utils.pg_db import save_to_postgresql
+            save_to_postgresql(json_data)
     except Exception as e:
         print(t("msg.write_error").format(info=f"convert json error: {e}"), flush=True)
         return False
