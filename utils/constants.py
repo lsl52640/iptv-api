@@ -1,8 +1,6 @@
 import os
 import re
 
-from utils.i18n import t
-
 config_dir = "config"
 
 output_dir = "output"
@@ -81,11 +79,11 @@ replace_dict = {
 }
 
 origin_map = {
-    "subscribe": t("name.subscribe"),
-    "whitelist": t("name.whitelist"),
-    "local": t("name.local"),
+    "subscribe": "订阅源",
+    "whitelist": "白名单",
+    "local": "本地源",
 }
 
 ipv6_proxy = "http://www.ipv6proxy.net/go.php?u="
 
-waiting_tip = t("msg.waiting_tip")
+waiting_tip = "📄 请等待有效结果生成"

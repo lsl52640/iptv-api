@@ -1,7 +1,5 @@
 from time import sleep
 
-from utils.i18n import t
-
 max_retries = 2
 
 
@@ -15,9 +13,9 @@ def retry_func(func, retries=max_retries, name=""):
             return func()
         except Exception as e:
             if name and i < retries - 1:
-                print(t("msg.failed_retrying_count").format(name=name, count=i + 1), flush=True)
+                print(f"🔄 请求{name}失败，正在进行第{i + 1}次重试...", flush=True)
             elif i == retries - 1:
                 raise Exception(
-                    t("msg.failed_retry_max").format(name=name)
+                    f"❌ 请求{name}失败，已达到最大重试次数"
                 )
-    raise Exception(t("msg.failed_retry_max").format(name=name))
+    raise Exception(f"❌ 请求{name}失败，已达到最大重试次数")

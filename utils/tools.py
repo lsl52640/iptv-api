@@ -25,7 +25,6 @@ from opencc import OpenCC
 
 import utils.constants as constants
 from utils.config import config, resource_path
-from utils.i18n import t
 from utils.types import ChannelData
 
 opencc_t2s = OpenCC("t2s")
@@ -303,14 +302,14 @@ def check_ipv6_support():
         return False
     url = "https://ipv6.tokyo.test-ipv6.com/ip/?callback=?&testdomain=test-ipv6.com&testname=test_aaaa"
     try:
-        print(t("msg.check_ipv6_support"))
+        print("🛒 正在检查当前 network 是否支持IPv6...")
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
-            print(t("msg.ipv6_supported"))
+            print("✅ 当前网络支持IPv6！")
             return True
     except Exception:
         pass
-    print(t("msg.ipv6_not_supported"))
+    print("⚠️ 当前网络不支持IPv6，别担心，IPv6的结果会被保存下来")
     return False
 
 
@@ -475,8 +474,8 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None, content=None):
                             )
                         except:
                             continue
-                        use_name = first_channel_name if current_group in (t("content.update_time"),
-                                                                           t("content.update_running")) else original_channel_name
+                        use_name = first_channel_name if current_group in ("⏰更新时间",
+                                                                           "⏰正在更新中，刷新获取最新结果") else original_channel_name
                         processed_channel_name = use_name
                         if from_fanmingming:
                             processed_channel_name = re.sub(
@@ -551,7 +550,7 @@ def convert_to_json_v1(path=None, content=None):
                         except:
                             continue
                         
-                        if current_group in (t("content.update_time"), t("content.update_running")):
+                        if current_group in ("⏰更新时间", "⏰正在更新中，刷新获取最新结果"):
                             continue
                             
                         processed_channel_name = original_channel_name

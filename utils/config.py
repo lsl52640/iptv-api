@@ -301,28 +301,6 @@ class ConfigManager:
         ]
 
     @property
-    def update_mode(self):
-        return self.config.get("Settings", "update_mode", fallback="interval")
-
-    @property
-    def update_interval(self):
-        raw = self.config.get("Settings", "update_interval", fallback="12")
-        if raw is None or str(raw).strip() == "":
-            return None
-        try:
-            return float(raw)
-        except (ValueError, TypeError):
-            return 12.0
-
-    @property
-    def update_times(self):
-        return self.config.get("Settings", "update_times", fallback="")
-
-    @property
-    def update_startup(self):
-        return self.config.getboolean("Settings", "update_startup", fallback=True)
-
-    @property
     def logo_url(self):
         return self.config.get("Settings", "logo_url", fallback="")
 

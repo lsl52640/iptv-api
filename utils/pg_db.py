@@ -2,7 +2,6 @@ import os
 import json
 import datetime
 from utils.config import config
-from utils.i18n import t
 
 def save_to_postgresql(json_data):
     """

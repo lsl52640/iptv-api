@@ -6,7 +6,7 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-1.png",
         "group": "📺央视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009",
+            "http://play.kankanlive.com/live/1698234869325962.m3u8",
             "http://iptv.huuc.edu.cn/hls/cctv1hd.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221225673/index.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221225723/index.m3u8",
@@ -20,11 +20,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-2.png",
         "group": "📺央视频道",
         "url": [
-            "http://69.30.245.50/live/cctv2.m3u8",
-            "http://192.151.150.154/live/cctv2hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv2hd",
-            "http://173.208.212.130:8181/720p/cctv2.m3u8",
-            "http://198.204.228.26/live/cctv2hd.m3u8"
+            "http://204.12.221.218:8181/3m1080p/cctv2.m3u8",
+            "http://iptv.huuc.edu.cn/hls/cctv2hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226122/index.m3u8",
+            "https://iptv.catvod.com/migu?id=631780532&token=5cccc637cd0b5233802a058619d2c74c",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226893/1.m3u8?"
         ]
     },
     {
@@ -34,11 +34,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-3.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv3hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd",
-            "http://222.223.41.27:8888/hls/3/index.m3u8",
-            "http://74.91.26.218:82/live/cctv3hd.m3u8",
-            "http://112.27.5.218:9901/tsfile/live/faacts/0003_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "http://iptv.huuc.edu.cn/hls/cctv3hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225766/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226165/index.m3u8",
+            "https://iptv.catvod.com/migu?id=624878271&token=c3b6c190fe71334ac0b52bac5de37b15",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226471/1.m3u8?"
         ]
     },
     {
@@ -48,11 +48,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-4.png",
         "group": "📺央视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv4k",
-            "http://74.91.26.218:82/live/cctv4hd.m3u8",
-            "http://198.204.228.26/live/cctv4hd.m3u8",
-            "http://120.202.73.48:8888/tsfile/live/0004_1.m3u8?key=txiptv&playlive=0&authid=0"
+            "http://iptv.huuc.edu.cn/hls/cctv4hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226124/index.m3u8",
+            "https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8",
+            "https://iptv.catvod.com/migu?id=631780421&token=c14a370da5a4193882b1a22411ebf672",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?"
         ]
     },
     {
@@ -62,11 +62,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv5hd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv5hd.m3u8?auth=testpub",
-            "http://207.56.13.146:81/cdnlive/cctv5.m3u8",
-            "http://60.4.29.80:8077/rtp/239.253.92.181:6046",
-            "http://115.171.216.32:4000/rtp/225.1.8.89:8000"
+            "http://120.76.248.139/live/bfgd/4200000064.m3u8",
+            "http://iptv.huuc.edu.cn/hls/cctv5hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225734/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226146/index.m3u8",
+            "https://iptv.catvod.com/migu?id=641886683&token=090600780a36acfe8abb039c4d45cc89"
         ]
     },
     {
@@ -76,11 +76,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv5p.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009",
             "https://www.freetv.top/migu/641886773.m3u8?migutoken=03a1b82e35e58cd89a95034ecb29e77e50493397000ec2b1e4d1ce59af01e6420d6dbc068c8230ec03be3a35a20eed8714e0959e3570a08713a7a2e8d86085eabf8f1aa85744c80c38343988b2",
             "http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221225603/index.m3u8",
-            "https://smart.pendy.dpdns.org/Smart.php?id=cctv5plus"
+            "https://smart.pendy.dpdns.org/Smart.php?id=cctv5plus",
+            "https://iptv.catvod.com/migu?id=641886773&token=2554beea5a61b4c5c060a0947f996ce5",
+            "https://hls-gateway.vpstv.net/streams/476888.m3u8"
         ]
     },
     {
@@ -90,11 +90,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-6.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv6hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv6hd",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv6hd.m3u8?auth=test20251009",
-            "http://107.150.60.122/live/cctv6hd.m3u8",
-            "http://221.7.175.154:8445/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "http://iptv.huuc.edu.cn/hls/cctv6hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225741/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226148/index.m3u8",
+            "https://iptv.catvod.com/migu?id=624878396&token=f12052b08eb48c9827dbb2e2748beee1",
+            "https://hls-gateway.vpstv.net/streams/476890.m3u8"
         ]
     },
     {
@@ -104,11 +104,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-7.png",
         "group": "📺央视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv7hd",
+            "http://223.78.65.165:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0",
             "http://38.75.136.137:98/gslb/dsdqbv/cctv7hd.m3u8?auth=test20251009",
-            "http://207.56.13.146:81/cdnlive/cctv7.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv7hd.m3u8?auth=testpub",
-            "http://74.91.26.218:82/live/cctv7hd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/cctv7hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225701/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226143/index.m3u8"
         ]
     },
     {
@@ -118,11 +118,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-8.png",
         "group": "📺央视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8hd",
             "http://38.75.136.137:98/gslb/dsdqbv/cctv8hd.m3u8?auth=test20251009",
-            "http://74.91.26.218:82/live/cctv8hd.m3u8",
-            "http://69.30.245.50/live/cctv8.m3u8",
-            "http://207.56.13.146:81/cdnlive/cctv8.m3u8"
+            "http://iptv.huuc.edu.cn/hls/cctv8hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225736/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226167/index.m3u8",
+            "https://iptv.catvod.com/migu?id=624878356&token=0481ceb745b1cf2e4f43261192d5aa60"
         ]
     },
     {
@@ -132,11 +132,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-9.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv9hd.m3u8",
-            "http://74.91.26.218:82/live/cctv9hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd",
-            "http://104.152.209.49:8181/720p/cctv9.m3u8",
-            "http://111.4.59.41:60901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0"
+            "https://xykt-fix.github.io/Y77.m3u8",
+            "http://iptv.huuc.edu.cn/hls/cctv9hd.m3u8",
+            "https://iptv.catvod.com/migu?id=673168140&token=2d321f938a7885a2368e1a757e2b3f4c",
+            "https://hls-gateway.vpstv.net/streams/476893.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226944/1.m3u8?"
         ]
     },
     {
@@ -147,10 +147,10 @@
         "group": "📺央视频道",
         "url": [
             "http://38.75.136.137:98/gslb/dsdqpub/cctv10hd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/cctv10hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv10hd",
-            "http://74.91.26.218:82/live/cctv10hd.m3u8",
-            "http://120.202.73.48:8888/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0"
+            "http://iptv.huuc.edu.cn/hls/cctv10hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225743/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226169/index.m3u8",
+            "https://iptv.catvod.com/migu?id=624878405&token=2c1ce7c99f8a03701acb468150b033ac"
         ]
     },
     {
@@ -160,11 +160,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-11.png",
         "group": "📺央视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009",
-            "http://198.204.228.26/live/cctv11hd.m3u8",
-            "http://104.152.209.49:8181/720p/cctv11.m3u8",
+            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv11hd",
             "http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub",
-            "http://223.78.65.165:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "http://104.152.209.49:8181/720p/cctv11.m3u8",
+            "https://xykt-fix.github.io/play/a02b/index.m3u8",
+            "http://iptv.huuc.edu.cn/hls/cctv11hd.m3u8"
         ]
     },
     {
@@ -175,10 +175,10 @@
         "group": "📺央视频道",
         "url": [
             "http://198.204.228.26/live/cctv12hd.m3u8",
-            "http://207.56.13.146:81/cdnlive/cctv12.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv12hd",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009",
-            "http://74.91.26.218:82/live/cctv12hd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/cctv12hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226103/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226126/index.m3u8",
+            "https://iptv.catvod.com/migu?id=673168185&token=d91cc65ea526504b0157724284783a43"
         ]
     },
     {
@@ -188,11 +188,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-13.png",
         "group": "📺央视频道",
         "url": [
-            "http://74.91.26.218:82/live/cctv13hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv13hd.m3u8?auth=test20251009",
+            "http://116.128.243.121:85/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0",
             "https://cdn3.163189.xyz/163189/cctv13",
-            "http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226128/index.m3u8",
+            "https://event.pull.hebtv.com/jishi/cp1.m3u8"
         ]
     },
     {
@@ -202,11 +202,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-14.png",
         "group": "📺央视频道",
         "url": [
-            "http://74.91.26.218:82/live/cctv14hd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009",
-            "http://bztv.tvbus.cc:8081/cdnlive/cctv14.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv14hd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/cctv14hd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/cctv14hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225738/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226150/index.m3u8",
+            "https://event.pull.hebtv.com/jishi/cp2.m3u8",
+            "https://iptv.catvod.com/migu?id=624878440&token=f7400e82094225709702b96f757e5fc3"
         ]
     },
     {
@@ -216,11 +216,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-15.png",
         "group": "📺央视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv15hd.m3u8?auth=testpub",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd",
-            "http://198.204.228.26/live/cctv15hd.m3u8",
-            "http://74.91.26.218:82/live/cctv15hd.m3u8",
-            "http://104.152.209.49:8181/720p/cctv15.m3u8"
+            "https://xykt-fix.github.io/play/a02e/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226147/index.m3u8",
+            "https://www.freetv.top/migu/673168223.m3u8?migutoken=4e8d5766579c6bef231494cabd07e5b49d965804790214280c9791e4c331fd90311cb62ea43d3a1899229bfa57be4afe5a567b32a6b78153fc9a9801e28a39435e078b48c211e71d6083519be4",
+            "https://iptv.catvod.com/migu?id=673168223&token=41d0344027c65a0ba445d7505ad2b84c",
+            "https://hls-gateway.vpstv.net/streams/476901.m3u8"
         ]
     },
     {
@@ -230,11 +230,10 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-16.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cctv16hd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009",
-            "http://104.152.209.49:8181/720p/cctv16.m3u8",
-            "https://zby.130519.xyz/PLTV/11/224/3221226120/index.m3u8"
+            "https://zby.130519.xyz/PLTV/11/224/3221226120/index.m3u8",
+            "https://hls-gateway.vpstv.net/streams/709089.m3u8",
+            "http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8",
+            "https://epg.pw/stream/c1beb2abcba5aef09c2f58efc3ca84b76de2c7b9cf60762b0d79772d9e70d454.m3u8"
         ]
     },
     {
@@ -244,11 +243,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-17.png",
         "group": "📺央视频道",
         "url": [
-            "https://live.264788.xyz/channel/cctv17?streamid=f9c36f1e95b5b35eac89cc89583e7c0a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "http://38.75.136.137:98/gslb/dsdqpub/cctv17hd.m3u8?auth=testpub",
-            "http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009",
-            "http://74.91.26.218:82/live/cctv17hd.m3u8",
-            "http://113.90.154.189:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "https://iptv.catvod.com/migu?id=673168256&token=de1207e0069c47c395bebb25d88f0059",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226318/1.m3u8?",
+            "http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8"
         ]
     },
     {
@@ -258,11 +255,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-1.png",
         "group": "📺央视频道",
         "url": [
-            "http://198.204.228.26/live/cetv1hd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cetv1hd",
             "http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225652/index.m3u8",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226494/1.m3u8",
-            "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv1/51/20240709/index.m3u8?msisdn=faba44f2972f5639da5c2f338e0b5e2d&mdspid=&spid=699004&netType=0&sid=5910022150&pid=2028597139&timestamp=20260729062130&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287154&ParentNodeID=-99&assertID=5910022150&client_ip=39.103.182.111&SecurityKey=20260729062130&promotionId=&mvid=5900006636&mcid=500020&playurlVersion=WX-A1-9.6.1.6-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4f4c87d158ddc90b5d1b52041ec6fb89&ddCalcu=948fvb4afcd68ac7ed1145082d5dbc19d05b&sv=10004&ct=android"
+            "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv1/51/20240709/index.m3u8?msisdn=faba44f2972f5639da5c2f338e0b5e2d&mdspid=&spid=699004&netType=0&sid=5910022150&pid=2028597139&timestamp=20260729062130&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287154&ParentNodeID=-99&assertID=5910022150&client_ip=39.103.182.111&SecurityKey=20260729062130&promotionId=&mvid=5900006636&mcid=500020&playurlVersion=WX-A1-9.6.1.6-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=4f4c87d158ddc90b5d1b52041ec6fb89&ddCalcu=948fvb4afcd68ac7ed1145082d5dbc19d05b&sv=10004&ct=android",
+            "https://iptv.catvod.com/migu?id=923287154&token=646d3525446eea476215926468c77e5e",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226494/1.m3u8?"
         ]
     },
     {
@@ -272,11 +269,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-2.png",
         "group": "📺央视频道",
         "url": [
+            "http://120.76.248.139/live/bfgd/4200000492.m3u8",
             "http://[2409:8087:1a0b:df::4013]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226537/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E7AxXs4eTU2oiWrhopr9sHw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND",
             "http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226718/1.m3u8",
-            "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv2/51/20240709/index.m3u8?msisdn=cc208866b1b958e39a699ba7b7d94cc3&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260729062130&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=39.103.182.111&SecurityKey=20260729062130&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.6.1.6-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a304a73612cb4c25d5722865cd605ae1&ddCalcu=1ae3va0a54a0aa67d3c651628c2b247c52d5&sv=10004&ct=android",
-            "http://hlszymgsplive.miguvideo.com:8080/migu/kailu/cetv2/51/20240709/index.m3u8?msisdn=2be6b2ec9fcf10d2c2457e2c710e172c&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260702160222&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=171.8.79.254&SecurityKey=20260702160222&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.6.1.6-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=feee593a8442219d14134be7dae89e7e&sv=10004&ct=android"
+            "http://gslbmgsplive.miguvideo.com/migu/kailu/cetv2/51/20240709/index.m3u8?msisdn=cc208866b1b958e39a699ba7b7d94cc3&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260729062130&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=39.103.182.111&SecurityKey=20260729062130&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.6.1.6-SNAPSHOT&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=a304a73612cb4c25d5722865cd605ae1&ddCalcu=1ae3va0a54a0aa67d3c651628c2b247c52d5&sv=10004&ct=android"
         ]
     },
     {
@@ -286,11 +283,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-3.png",
         "group": "📺央视频道",
         "url": [
+            "http://198.204.228.26/live/cetv3.m3u8",
             "http://[2409:8087:7004:20:1000::22]:6610/yinhe/2/ch00000090990000001309/index.m3u8",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226577/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EhE2Z89HKgsQOlN9opVn1iw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNN03yUnk4zBVk1bynPPL3hZ%2CEND",
             "http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226722/1.m3u8",
-            "http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221227352/index.m3u8",
-            "http://ott.mobaibox.com/PLTV/3/224/3221227018/index.m3u8"
+            "http://iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221227352/index.m3u8"
         ]
     },
     {
@@ -315,10 +312,10 @@
         "group": "📡卫视频道",
         "url": [
             "https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdwshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/gdwshd.m3u8?auth=testpub",
-            "http://104.152.209.49:8181/720p/gdws.m3u8",
-            "http://107.150.60.122/live/gdwshd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/gdhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225731/index.m3u8",
+            "https://iptv.catvod.com/migu?id=608831231&token=af464be4890e0f4f6625b09a760c5f57",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E2MGyx659D_aaDPP0qt3NgA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -342,11 +339,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/浙江卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=zjwshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/zjwshd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/zjwshd.m3u8",
-            "http://107.150.60.122/live/zjwshd.m3u8",
-            "http://123.118.55.165:45237/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "https://play-qukan.cztv.com/live/1746687519046362.m3u8",
+            "http://iptv.huuc.edu.cn/hls/zjhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225727/index.m3u8",
+            "http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8",
+            "http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8"
         ]
     },
     {
@@ -356,11 +353,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/湖南卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
-            "http://107.150.60.122/live/hnwshd.m3u8",
-            "http://8.138.7.223/tv/api.php?id=hnws4k",
-            "http://74.91.26.218:82/live/hnwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hnwshd"
+            "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
+            "http://iptv.huuc.edu.cn/hls/hunanhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225726/index.m3u8",
+            "https://hlsbkmgsplive.miguvideo.com/wd-hunanhd-2500/01.m3u8?&HlsSubType=&encrypt=",
+            "https://hlsbkmgsplive.miguvideo.com/wd-hunanhd-1200/01.m3u8?&HlsSubType=&encrypt="
         ]
     },
     {
@@ -370,11 +367,10 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/北京卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://204.12.221.218:8181/3m1080p/bjws.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=bjwshd",
-            "http://107.150.60.122/live/bjwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/bjwshd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/bjwshd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/btv1hd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225724/index.m3u8",
+            "https://iptv.catvod.com/migu?id=630287636&token=2b0a11b47ac724634e37e4248b463cda",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226900/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EcYPi33WFyhvd6SjmqUKhJg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -384,11 +380,10 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/湖北卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hbwshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/hbwshd.m3u8?auth=testpub",
-            "http://204.12.221.218:8181/3m1080p/hbws.m3u8",
-            "http://192.151.150.154/live/hbwshd.m3u8",
-            "http://iptv.huuc.edu.cn/hls/hbhd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/hbhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225729/index.m3u8",
+            "https://iptv.catvod.com/migu?id=947472496&token=6378bdafcb2befdd254844b3e210c3e6",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226952/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EREB40lnZnCEwjRy7LZuhIQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -398,11 +393,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hljwshd",
-            "http://198.204.228.26/live/hljwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub",
-            "http://107.150.60.122/live/hljwshd.m3u8",
-            "http://123.118.55.165:45237/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "https://idclive.hljtv.com:4430/live/hljws_own.m3u8",
+            "http://iptv.huuc.edu.cn/hls/hljhd.m3u8",
+            "https://iptv.catvod.com/migu?id=738906901&token=83c649846d319cb5ae67dfd271706912",
+            "https://hls-gateway.vpstv.net/streams/708854.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226965/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E7UiKL56-L86ihmTWaZ6csw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -412,11 +407,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/安徽卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://198.204.228.26/live/ahwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/ahwshd.m3u8?auth=testpub",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ahwshd",
-            "http://204.12.221.218:8181/3m1080p/ahws.m3u8",
-            "http://104.152.209.49:8181/720p/ahws.m3u8"
+            "http://iptv.huuc.edu.cn/hls/ahhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225739/index.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226943/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E0QmKQ_slRCwvVVUUfxPVbw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -426,11 +419,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/重庆卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://192.151.150.154/live/cqwshd.m3u8",
-            "http://204.12.221.218:8181/3m1080p/cqws.m3u8",
-            "http://107.150.60.122/live/cqwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cqwshd",
-            "http://198.204.228.26/live/cqwshd.m3u8"
+            "http://221.226.51.220:50081/newlive/live/hls/28/live.m3u8",
+            "http://iptv.huuc.edu.cn/hls/cqhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226171/index.m3u8",
+            "https://iptv.catvod.com/migu?id=738910914&token=84f8885058519698dc66fefd39404744",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226963/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EjTXsJprEx2nE38tdvu5lhA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -440,11 +433,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/东方卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqpub/dfwshd.m3u8?auth=testpub",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dfwshd",
-            "http://107.150.60.122/live/dfwshd.m3u8",
             "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
-            "http://104.152.209.49:8181/720p/dfws.m3u8"
+            "http://iptv.huuc.edu.cn/hls/dfhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225725/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226106/index.m3u8",
+            "https://iptv.catvod.com/migu?id=651632648&token=5cd061a3ca18f11aef594545049194f6"
         ]
     },
     {
@@ -454,11 +447,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/东南卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dnwshd",
-            "http://204.12.221.218:8181/3m1080p/dnws.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/dnwshd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/dnwshd.m3u8",
-            "http://iptv.huuc.edu.cn/hls/dnhd.m3u8"
+            "http://drive.mxmy.net:8888/udp/239.3.1.156:8148",
+            "http://iptv.huuc.edu.cn/hls/dnhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225745/index.m3u8",
+            "https://hlsbkmgsplive.miguvideo.com/migu/kailu/dongnanws/51/20230724/01.m3u8?&HlsSubType=&encrypt=",
+            "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
         ]
     },
     {
@@ -480,11 +473,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广西卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxwshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/gxwshd.m3u8",
-            "http://107.150.60.122/live/gxwshd.m3u8",
-            "https://zby.130519.xyz/PLTV/11/224/3221226084/index.m3u8"
+            "https://zby.130519.xyz/PLTV/11/224/3221226084/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226130/index.m3u8",
+            "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8",
+            "https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227010/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EkAhb-89sxdm9fz6-heXCuw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -494,11 +487,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/贵州卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://198.204.228.26/live/gzwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gzwshd",
-            "http://204.12.221.218:8181/3m1080p/gzws.m3u8",
-            "http://107.150.60.122/live/gzwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/gzwshd.m3u8?auth=testpub"
+            "https://zby.130519.xyz/PLTV/11/224/3221226173/index.m3u8",
+            "https://gd202.tv1288.xyz/tsfile/live/1023_1.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227012/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EnqBF03rFwPucF8ODtWxLQQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -508,7 +499,6 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/海南卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://204.12.221.218:8181/3m1080p/lyws.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221226154/index.m3u8",
             "https://iptv.catvod.com/migu?id=947472502&token=3fe1d9b9698dfc5e8fc18f05f9b3188f",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227029/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EEuBMjt2kLMD8fAO7QYER7Q%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
@@ -521,11 +511,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/河北卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hewshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/hewshd.m3u8?auth=testpub",
-            "http://198.204.228.26/live/hbwshd.m3u8",
-            "http://107.150.60.122/live/hbwshd.m3u8",
-            "http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8"
+            "http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8",
+            "http://iptv.huuc.edu.cn/hls/hebhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226107/index.m3u8",
+            "http://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=2510710360&k=3d44740039027301acf8341d7361ab59",
+            "https://iptv.catvod.com/migu?id=962042070&token=2c758e5e670802233575db1a416e6aa6"
         ]
     },
     {
@@ -535,11 +525,8 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/河南卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://1.94.31.214/php/hntv.php?id=hnws",
-            "http://38.75.136.137:98/gslb/dsdqpub/hawshd.m3u8?auth=testpub",
-            "http://104.152.209.49:8181/720p/haws.m3u8",
-            "http://107.150.60.122/live/hawshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hawshd"
+            "https://zby.130519.xyz/PLTV/11/224/3221226132/index.m3u8",
+            "https://iptv.catvod.com/migu?id=790187291&token=eb8b4179494620a4a4c35d394a5039c9"
         ]
     },
     {
@@ -549,7 +536,6 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/吉林卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://38.75.136.137:98/gslb/dsdqpub/jlwshd.m3u8?auth=testpub",
             "https://zby.130519.xyz/PLTV/11/224/3221226149/index.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221226082/index.m3u8",
             "https://iptv.catvod.com/migu?id=947472500&token=584172b9bf83fab40e4270c84bb5f429",
@@ -563,11 +549,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/江苏卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jswshd",
-            "http://207.56.13.146:81/cdnlive/jsws.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009",
-            "http://107.150.60.122/live/jswshd.m3u8",
-            "http://104.152.209.49:8181/720p/jsws.m3u8"
+            "http://123.118.55.165:45237/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0",
+            "http://iptv.huuc.edu.cn/hls/jshd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225720/index.m3u8",
+            "https://hlsbkmgsplive.miguvideo.com/migu/kailu/jswshd265/55/20200407/01.m3u8?&HlsSubType=&encrypt=",
+            "https://iptv.catvod.com/migu?id=623899368&token=7e7dacde1c1b9f399886bafbadcb715b"
         ]
     },
     {
@@ -578,10 +564,10 @@
         "group": "📡卫视频道",
         "url": [
             "http://198.204.228.26/live/jxwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jxwshd",
-            "http://38.75.136.137:98/gslb/dsdqpub/jxwshd.m3u8?auth=testpub",
-            "http://107.150.60.122/live/jxwshd.m3u8",
-            "http://123.118.55.165:45237/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "http://iptv.huuc.edu.cn/hls/jxhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225740/index.m3u8",
+            "https://iptv.catvod.com/migu?id=783847495&token=486dc0d1a3edba9dbcb04cad9e8d540a",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226956/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Ei6ZIpVizXlewg-YfGvH8dA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -591,11 +577,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd",
-            "http://107.150.60.122/live/lnwshd.m3u8",
-            "http://198.204.228.26/live/lnwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub",
-            "http://204.12.221.218:8181/3m1080p/lnws.m3u8"
+            "http://iptv.huuc.edu.cn/hls/lnhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225747/index.m3u8",
+            "https://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/54/20200407/01.m3u8?&HlsSubType=&encrypt=",
+            "https://iptv.catvod.com/migu?id=630291707&token=7db36ffb37dfa4d358b2b0c1fd5834b7",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226966/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E6qJH8Fd-zgCGx3P-Ce86cA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -605,8 +591,7 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/内蒙古卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "https://live.264788.xyz/channel/neimengguweishi?streamid=3e7340acf8869ac1c7dad1bb836dcd35&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "https://live.264788.xyz/channel/neimengguweishi?streamid=81a015dbecf3031d7d847b7a9b059f67&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+            "http://153.0.171.163:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=0",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227018/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ErN_hoRDwApMKnJqiNHvn9w%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND",
             "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225634/index.m3u8"
         ]
@@ -618,11 +603,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "https://live.264788.xyz/channel/ningxiaweishi?streamid=e1236348f815c36a0429357e5b5c5f10&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "https://live.264788.xyz/channel/ningxiaweishi?streamid=551474d02bee1c160e1692e22c45ddba&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "http://107.150.60.122/live/nxws.m3u8",
             "https://iptv.catvod.com/migu?id=738910535&token=243e3e42027d42beac4df30d11710004",
-            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227003/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ESco1zinvdUYzleEkXYhIvA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227003/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ESco1zinvdUYzleEkXYhIvA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND",
+            "http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/8/3221226454/index.m3u8"
         ]
     },
     {
@@ -632,11 +615,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/青海卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=qhws",
-            "http://38.75.136.137:98/gslb/dsdqpub/qhws.m3u8?auth=testpub",
-            "http://198.204.228.26/live/qhws.m3u8",
-            "http://107.150.60.122/live/qhws.m3u8",
-            "http://111.8.224.6:9999/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0"
+            "https://zby.130519.xyz/PLTV/11/224/3221226105/index.m3u8",
+            "https://iptv.catvod.com/migu?id=947472506&token=a2bae45e4ec65d71fd0bbc0e5be6ab1b",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227017/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EacviHy_ucMT27Ymf2iLtZA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -646,11 +627,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/山东卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sdwshd",
-            "http://107.150.60.122/live/sdwshd.m3u8",
-            "http://198.204.228.26/live/sdwshd.m3u8",
-            "http://123.118.55.165:45237/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0",
-            "http://iptv.huuc.edu.cn/hls/sdhd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/sdhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225733/index.m3u8",
+            "https://hlsbkmgsplive.miguvideo.com/wd_r4/yg/shandongwshd/3000/01.m3u8?&HlsSubType=&encrypt=",
+            "https://hlsbkmgsplive.miguvideo.com/wd-shandonghd-1200/01.m3u8?&HlsSubType=&encrypt=",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226957/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EjW26v5VaHGy1jQuIA-4EbA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -660,8 +641,7 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/山西卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "https://live.264788.xyz/channel/shanxiweishi?streamid=69e002ac7467d661ff7ad0671ed43f16&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "https://live.264788.xyz/channel/shanxiweishi?streamid=eeb7d60ca6e0db131ea7a092a3cd28d2&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+            "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221226113/index.m3u8",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227016/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ESb5Qr3NTpE2ZugIroKoyTw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
@@ -673,11 +653,8 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/陕西卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://198.204.228.26/live/snwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/snwshd.m3u8?auth=testpub",
-            "http://204.12.221.218:8181/3m1080p/snws.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=snwshd",
-            "http://107.150.60.122/live/snwshd.m3u8"
+            "https://iptv.catvod.com/migu?id=738910838&token=ca24f5d440ad9a31cfb74ee9dc51e14c",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226999/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EsGLKaSqf0wDZMbAjeQtfyw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -687,11 +664,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/四川卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://107.150.60.122/live/scwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=scwshd",
-            "http://198.204.228.26/live/scwshd.m3u8",
-            "http://111.8.224.6:9999/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0",
-            "http://iptv.huuc.edu.cn/hls/schd.m3u8"
+            "http://iptv.huuc.edu.cn/hls/schd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226152/index.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226995/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EBQiz3wrGrpG0CUSRIJ-7Jg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -701,11 +676,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/深圳卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://198.204.228.26/live/szwshd.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=szwshd",
-            "http://107.150.60.122/live/szwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub",
-            "http://207.56.13.146:81/cdnlive/szws.m3u8"
+            "http://iptv.huuc.edu.cn/hls/szhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225728/index.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226959/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EGrVNEZREjuNVKiTJo2mtwg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -725,11 +698,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/天津卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjwshd",
-            "http://198.204.228.26/live/tjwshd.m3u8",
-            "http://107.150.60.122/live/tjwshd.m3u8",
-            "http://207.56.13.146:81/cdnlive/tjws.m3u8",
-            "http://204.12.221.218:8181/3m1080p/tjws.m3u8"
+            "http://iptv.huuc.edu.cn/hls/tjhd.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221225742/index.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226954/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eaf3wyULP1h575eM_4ByMDg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND",
+            "http://[2409:8087:1a01:df::4030]:80/TVOD/88888888/224/3221225972/main.m3u8",
+            "http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226459/index.m3u8"
         ]
     },
     {
@@ -739,10 +712,6 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/西藏卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "https://live.264788.xyz/channel/xizangweishi?streamid=4b4e8ea919f1cfd5e43deed1d1675251&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-            "http://107.150.60.122/live/xzws.m3u8",
-            "http://198.204.228.26/live/xzws.m3u8",
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xzws",
             "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227033/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EdeTB7OZ9G_VNJk5C3t96fQ%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
@@ -753,11 +722,8 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/新疆卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xjws",
-            "http://198.204.228.26/live/xjws.m3u8",
-            "http://107.150.60.122/live/xjws.m3u8",
-            "http://123.118.55.165:45237/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0",
-            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227011/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ExAUu61iVvo_xYbANWJhgXw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227011/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ExAUu61iVvo_xYbANWJhgXw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND",
+            "http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226460/index.m3u8"
         ]
     },
     {
@@ -767,11 +733,9 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/云南卫视.png",
         "group": "📡卫视频道",
         "url": [
-            "http://107.150.60.122/live/ynwshd.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub",
-            "http://204.12.221.218:8181/3m1080p/ynws.m3u8",
-            "http://198.204.228.26/live/ynwshd.m3u8",
-            "http://192.151.150.154/live/ynwshd.m3u8"
+            "https://zby.130519.xyz/PLTV/11/224/3221226109/index.m3u8",
+            "https://zby.130519.xyz/PLTV/11/224/3221226151/index.m3u8",
+            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221227028/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EGfQPqRNVeBjTMsZ48qu0SA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
         ]
     },
     {
@@ -822,6 +786,7 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东卫视.png",
         "group": "☘️广东频道",
         "url": [
+            "https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4",
             "http://iptv.huuc.edu.cn/hls/gdhd.m3u8",
             "https://zby.130519.xyz/PLTV/11/224/3221225731/index.m3u8",
             "https://iptv.catvod.com/migu?id=608831231&token=af464be4890e0f4f6625b09a760c5f57",
@@ -847,11 +812,11 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png",
         "group": "☘️广东频道",
         "url": [
-            "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nfws",
-            "http://198.204.228.26/live/nfws.m3u8",
-            "http://107.150.60.122/live/nfws.m3u8",
-            "http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub",
-            "https://iptv.catvod.com/migu?id=608917627&token=a4dae7003589713cee33c9c19c9d5e6e"
+            "https://iptv.catvod.com/migu?id=608917627&token=a4dae7003589713cee33c9c19c9d5e6e",
+            "http://goo.bkpcp.top/mg/dwqws",
+            "https://www.freetv.top/migu/608917627.m3u8?migutoken=bad0a45eea94649f2e7f1b35e1d98d034b874a02984a76abb21e4537dee28f974e6da241dc7705109722be71c8b1302302b51cd4cb06c69ca55fdcf7279d415e0a0fce7c492b6842956ab34fcc",
+            "https://stream1.freetv.fun/9e44565ab6186689007a295d8b94b2a970fafde637068b0e3837e5f84689a8f3.m3u8",
+            "https://www.freetv.top/migu/608917627.m3u8?migutoken=6e23ed23803d2776218fbd5b6931d4dd0d0a20d0269ca0da6b2efaaf101f71c62689ec1d6f73e16a10d1b756f7e23f0de494b881e2bc39c12250715721f84c185577680003f363869dba1b7e90"
         ]
     },
     {
@@ -861,7 +826,6 @@
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广州综合.png",
         "group": "☘️广东频道",
         "url": [
-            "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8",
             "http://r.jdshipin.com/iR6Gq",
             "http://r.jdshipin.com/snhya"
         ]

@@ -19,7 +19,6 @@ from updates.subscribe import get_channels_by_subscribe_urls
 from utils.aggregator import ResultAggregator
 from utils.channel import get_channel_items, append_total_data, test_speed
 from utils.config import config
-from utils.i18n import t
 from utils.speed import clear_cache
 from utils.tools import (
     get_pbar_remaining,
@@ -81,12 +80,7 @@ class UpdateSource:
             remaining_time = get_pbar_remaining(n=self.pbar.n, total=self.total, start_time=self.start_time)
             if self.update_progress:
                 self.update_progress(
-                    t("msg.progress_desc").format(
-                        name=name,
-                        remaining_total=remaining_total,
-                        item_name=item_name,
-                        remaining_time=remaining_time,
-                    ),
+                    f"正在进行{name}，剩余{remaining_total}个{item_name}，预计完成剩余时间：{remaining_time}",
                     int((self.pbar.n / self.total) * 100),
                 )
 
@@ -143,17 +137,12 @@ class UpdateSource:
             subscribe_entries.append(e)
 
         print(
-            t("msg.subscribe_urls_whitelist_total").format(
-                default_count=len(default_entries),
-                whitelist_count=len(whitelist_entries),
-                disabled_count=disabled_count,
-                total=len(subscribe_entries),
-            ),
+            f"✅ 订阅源数量：{len(default_entries)}，订阅白名单数量：{len(whitelist_entries)}，停用地址数量：{disabled_count}，有效总数量：{len(subscribe_entries)}",
             flush=True,
         )
 
         if not subscribe_entries:
-            print(t("msg.no_subscribe_urls").format(file=constants.subscribe_path), flush=True)
+            print(f"❌ 没有找到有效的订阅地址，请检查文件：{constants.subscribe_path}，需要添加订阅地址后才能获取订阅源！", flush=True)
             return {}
 
         whitelist_urls = [e['url'] for e in whitelist_entries]
@@ -249,7 +238,7 @@ class UpdateSource:
         test_data = {
             category: copy.deepcopy(items)
             for category, items in self.channel_data.items()
-            if category != t("content.unmatch_channel")
+            if category != "♻️未匹配频道"
         }
         urls_total = get_urls_len(test_data)
 
@@ -261,21 +250,20 @@ class UpdateSource:
         )
         self.total = get_urls_len(test_data)
 
-        print(t("msg.total_urls_need_test_speed").format(total=urls_total, speed_total=self.total))
+        print(f"总接口数量: {urls_total}, 需要进行测速的接口数量: {self.total}")
 
         if self.total <= 0:
             self.aggregator.is_last = True
             return {}
-        if self.update_progress:
             self.update_progress(
-                t("msg.progress_speed_test").format(total=urls_total, speed_total=self.total),
+                f"🚀 正在进行测速, 总接口数量: {urls_total}, 需要进行测速的接口数量: {self.total}",
                 0,
             )
 
         self.start_time = time()
         self.pbar = tqdm(
             total=self.total,
-            desc=t("pbar.speed_test"),
+            desc="🚀 测速",
             file=sys.stdout,
             mininterval=1.0,
             miniters=1,
@@ -286,8 +274,8 @@ class UpdateSource:
                 test_data,
                 ipv6=self.ipv6_support,
                 callback=lambda count=1: self.pbar_update(
-                    name=t("pbar.speed_test"),
-                    item_name=t("pbar.url"),
+                    name="🚀 测速",
+                    item_name="接口",
                     count=count,
                 ),
                 on_task_complete=self.aggregator.add_item,
@@ -306,24 +294,14 @@ class UpdateSource:
         if not self.run_ui:
             return
 
-        open_service = config.open_service
-        service_tip = t("msg.service_tip") if open_service else ""
-
-        tip = (
-            t("msg.service_run_success").format(service_tip=service_tip)
-            if open_service and config.open_update is False
-            else t("msg.update_completed").format(
-                time=format_interval(time() - main_start_time),
-                service_tip=service_tip,
-            )
-        )
+        tip = f"🥳 更新完成！总耗时：{format_interval(time() - main_start_time)}"
 
         if self.update_progress:
             self.update_progress(
                 tip,
                 100,
                 finished=True,
-                url=f"{get_public_url()}" if open_service else None,
+                url=None,
                 now=self.now,
             )
 
@@ -335,22 +313,14 @@ class UpdateSource:
             main_start_time = time()
             performance = config.performance_settings
             print(
-                t("msg.performance_settings").format(
-                    mode=performance.requested_mode,
-                    resolved=performance.resolved_mode,
-                    cpu=performance.cpu_count,
-                    memory=performance.memory_gb,
-                    speed=performance.speed_test_concurrency,
-                    probe=performance.probe_concurrency,
-                    fetch=performance.fetch_workers,
-                ),
+                f"⚙️ 性能模式: {performance.requested_mode} → {performance.resolved_mode}，可用资源: {performance.cpu_count} CPU / {performance.memory_gb} GB，并发: 测速 {performance.speed_test_concurrency}、媒体探测 {performance.probe_concurrency}、源抓取 {performance.fetch_workers}",
                 flush=True,
             )
 
             self._prepare_channel_data()
 
             if not self.channel_names:
-                print(t("msg.no_channel_names").format(file=config.source_file), flush=True)
+                print(f"❌ 模板中没有任何频道名称！请检查文件：{config.source_file}！", flush=True)
                 self._notify_ui_finished(main_start_time)
                 return
 
@@ -384,16 +354,13 @@ class UpdateSource:
                     frozen.save(constants.frozen_path)
 
             print(
-                t("msg.update_completed").format(
-                    time=format_interval(time() - main_start_time),
-                    service_tip="",
-                ),
+                f"🥳 更新完成！总耗时：{format_interval(time() - main_start_time)}",
                 flush=True,
             )
             self._notify_ui_finished(main_start_time)
 
         except asyncio.exceptions.CancelledError:
-            print(t("msg.update_cancelled"), flush=True)
+            print("更新已被取消！", flush=True)
 
     # ----------------------------
     # lifecycle control
@@ -407,18 +374,15 @@ class UpdateSource:
 
         if not config.open_update:
             if self.run_ui:
-                self.update_progress(t("msg.update_disabled"), 0, finished=True)
+                self.update_progress("⚠️ 更新功能已被禁用", 0, finished=True)
             return
 
         if self.run_ui:
-            self.update_progress(t("msg.check_ipv6_support"), 0)
+            self.update_progress("🛒 正在检查当前网络是否支持IPv6...", 0)
 
         self.ipv6_support = config.ipv6_support or check_ipv6_support()
 
-        if not os.getenv("GITHUB_ACTIONS") and (config.update_interval or config.update_times):
-            await self.scheduler(asyncio.Event())
-        elif config.update_startup:
-            await self.main()
+        await self.main()
 
     def stop(self):
         for task in self.tasks:
@@ -432,58 +396,12 @@ class UpdateSource:
         if self.stop_event:
             self.stop_event.set()
 
-    async def scheduler(self, stop_event: asyncio.Event):
-        self.stop_event = stop_event
-        tz = pytz.timezone(config.time_zone)
-        mode = config.update_mode
-        update_times = parse_times(config.update_times)
-
-        try:
-            self.now = datetime.datetime.now(tz)
-            if config.update_startup:
-                await self.main()
-
-            while not stop_event.is_set():
-                self.now = datetime.datetime.now(tz)
-
-                if mode == "time" and update_times:
-                    candidates = []
-                    for h, m in update_times:
-                        candidate = self.now.replace(hour=h, minute=m, second=0, microsecond=0)
-                        if candidate <= self.now:
-                            candidate = candidate + datetime.timedelta(days=1)
-                        candidates.append(candidate)
-
-                    next_time = min(candidates)
-                    wait_seconds = (next_time - self.now).total_seconds()
-                    print(t("msg.schedule_update_time").format(time=next_time.strftime("%Y-%m-%d %H:%M:%S")), flush=True)
-
-                    try:
-                        await asyncio.wait_for(stop_event.wait(), timeout=wait_seconds)
-                        if stop_event.is_set():
-                            break
-                    except asyncio.TimeoutError:
-                        self.now = datetime.datetime.now(tz)
-                        await self.main()
-                else:
-                    next_time = self.now + datetime.timedelta(hours=config.update_interval)
-                    print(t("msg.schedule_update_time").format(time=next_time.strftime("%Y-%m-%d %H:%M:%S")), flush=True)
-
-                    try:
-                        await asyncio.wait_for(stop_event.wait(), timeout=config.update_interval * 3600)
-                    except asyncio.TimeoutError:
-                        self.now = datetime.datetime.now(tz)
-                        await self.main()
-
-        except asyncio.CancelledError:
-            print(t("msg.schedule_cancelled"), flush=True)
-
 
 if __name__ == "__main__":
     info = get_version_info()
-    print(t("msg.version_info").format(name=info["name"], version=info["version"], build_time=info["build_time"]), flush=True)
+    print(f"⚡️ {info['name']} 版本: {info['version']} (构建时间: {info['build_time']})", flush=True)
     if not config.open_update:
-        print(t("msg.update_disabled"), flush=True)
+        print("⚠️ 更新功能已被禁用", flush=True)
     else:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)

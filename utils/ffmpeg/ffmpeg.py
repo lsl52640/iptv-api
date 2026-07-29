@@ -3,8 +3,6 @@ import re
 import subprocess
 from time import time
 
-from utils.i18n import t
-
 min_measure_time = 1.0
 stability_window = 4
 stability_threshold = 0.12
@@ -26,9 +24,9 @@ def check_ffmpeg_installed_status():
         print(e)
     finally:
         if status:
-            print(t("msg.ffmpeg_installed"))
+            print("✅ FFmpeg 已安装")
         else:
-            print(t("msg.ffmpeg_not_installed"))
+            print("❌ FFmpeg 未安装")
     return status
 
 

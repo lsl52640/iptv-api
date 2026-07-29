@@ -10,7 +10,6 @@ from tqdm.asyncio import tqdm_asyncio
 import utils.constants as constants
 from utils.channel import format_channel_name
 from utils.config import config
-from utils.i18n import t
 from utils.requests.tools import get_soup_requests
 from utils.retry import retry_func
 from utils.tools import (
@@ -69,17 +68,17 @@ async def get_channels_by_subscribe_urls(
     subscribe_urls_len = len(urls)
     pbar = tqdm_asyncio(
         total=subscribe_urls_len,
-        desc=t("pbar.getting_name").format(name=t("name.subscribe")),
+        desc="🔍 正在进行获取订阅源",
         file=sys.stdout,
         mininterval=1.0,
         miniters=1,
         dynamic_ncols=False,
     )
     start_time = time()
-    mode_name = t("name.subscribe")
+    mode_name = "订阅源"
     if callback:
         callback(
-            t("pbar.getting_name").format(name=mode_name),
+            "🔍 正在进行获取订阅源",
             0,
         )
     logger = get_logger(constants.unmatch_log_path, level=INFO, init=True)
@@ -101,7 +100,7 @@ async def get_channels_by_subscribe_urls(
             return
         with disabled_lock:
             disabled_urls.add(source_url)
-        print(t("msg.auto_disable_source").format(name=mode_name, url=source_url, reason=reason), flush=True)
+        print(f"⛔ 订阅源地址已自动停用：{source_url}（{reason}）", flush=True)
 
     def process_subscribe_channels(subscribe_info: str | dict) -> defaultdict:
         nonlocal unmatched_logged
@@ -126,7 +125,7 @@ async def get_channels_by_subscribe_urls(
                 )
             except Exception as e:
                 print(e, flush=True)
-                disable_reason = t("msg.auto_disable_request_failed")
+                disable_reason = "请求失败"
             if response:
                 if hasattr(response, 'text'):
                     response.encoding = "utf-8"
@@ -134,7 +133,7 @@ async def get_channels_by_subscribe_urls(
                 else:
                     content = str(response)
                 if not content:
-                    disable_reason = t("msg.auto_disable_empty_content")
+                    disable_reason = "内容为空"
                 try:
                     save_url_content('subscribe', subscribe_url, content)
                 except Exception:
@@ -184,22 +183,18 @@ async def get_channels_by_subscribe_urls(
                                 channel_seen[name].add(key)
                                 channels[name].append(value)
                 if not channels and not disable_reason:
-                    disable_reason = t("msg.auto_disable_no_match")
+                    disable_reason = "没有匹配到符合条件的值"
         except Exception as e:
-            print(t("msg.error_name_info").format(name=subscribe_url, info=e), flush=True)
+            print(f"❌ {subscribe_url} 出错：{e}", flush=True)
             if not disable_reason:
-                disable_reason = t("msg.auto_disable_request_failed")
+                disable_reason = "请求失败"
         finally:
             if disable_reason:
                 _mark_disabled(source_url, disable_reason)
             pbar.update()
             if callback:
                 callback(
-                    t("msg.progress_desc").format(name=f"{t('pbar.get')}{mode_name}",
-                                                  remaining_total=subscribe_urls_len - pbar.n,
-                                                  item_name=mode_name,
-                                                  remaining_time=get_pbar_remaining(n=pbar.n, total=pbar.total,
-                                                                                    start_time=start_time)),
+                    f"正在进行获取订阅源，剩余{subscribe_urls_len - pbar.n}个订阅源，预计完成剩余时间：{get_pbar_remaining(n=pbar.n, total=pbar.total, start_time=start_time)}",
                     int((pbar.n / subscribe_urls_len) * 100),
                 )
         return channels
@@ -220,10 +215,9 @@ async def get_channels_by_subscribe_urls(
             counts = disable_urls_in_file(constants.subscribe_path, disabled_urls)
             active_count = counts["active"]
             disabled_count = counts["disabled"]
-        print(t("msg.auto_disable_source_done").format(name=mode_name, active_count=active_count,
-                                                       disabled_count=disabled_count), flush=True)
+        print(f"🆗 订阅源: ✅ 有效地址数量：{active_count}，⛔ 停用地址数量：{disabled_count}", flush=True)
         if epg_urls_out is not None and discovered_epg_urls:
             epg_urls_out.update(discovered_epg_urls)
-            print(t("msg.subscribe_epg_found").format(count=len(discovered_epg_urls)), flush=True)
+            print(f"📡 从订阅源中发现 {len(discovered_epg_urls)} 个 EPG 地址", flush=True)
         close_logger_handlers(logger)
         return subscribe_results

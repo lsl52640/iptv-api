@@ -13,7 +13,6 @@ import m3u8
 import utils.constants as constants
 from utils.config import config
 from utils.ffmpeg import probe_url, ffmpeg_url
-from utils.i18n import t
 from utils.requests.tools import headers as request_headers
 from utils.tools import get_resolution_value
 from utils.types import TestResult, ChannelTestResult, TestResultCacheData

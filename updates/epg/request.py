@@ -14,7 +14,6 @@ from tqdm.asyncio import tqdm_asyncio
 import utils.constants as constants
 from utils.channel import format_channel_name
 from utils.config import config
-from utils.i18n import t
 from utils.retry import retry_func
 from utils.tools import (
     get_pbar_remaining,
@@ -121,19 +120,14 @@ async def get_epg(names=None, callback=None, extra_entries=None):
                 seen_keys.add(key)
     disabled_count = count_disabled_urls(constants.epg_path)
     print(
-        t("msg.epg_urls_whitelist_total").format(
-            default_count=len(default_entries),
-            whitelist_count=len(whitelist_entries),
-            disabled_count=disabled_count,
-            total=len(configured_entries),
-        )
+        f"✅ EPG源数量：{len(default_entries)}，EPG白名单数量：{len(whitelist_entries)}，停用地址数量：{disabled_count}，有效总数量：{len(configured_entries)}"
     )
     if not configured_entries and not discovered_entries:
         return {}
     urls_len = len(configured_entries) + len(discovered_entries)
     pbar = tqdm_asyncio(
         total=urls_len,
-        desc=t("pbar.getting_name").format(name=t("name.epg")),
+        desc="🔍 正在进行获取EPG源",
         file=sys.stdout,
         mininterval=1.0,
         miniters=1,
@@ -154,7 +148,7 @@ async def get_epg(names=None, callback=None, extra_entries=None):
             return
         with disabled_lock:
             disabled_urls.add(source_url)
-        print(t("msg.auto_disable_source").format(name=t("name.epg"), url=source_url, reason=reason), flush=True)
+        print(f"⛔ EPG源地址已自动停用：{source_url}（{reason}）", flush=True)
 
     def process_run(entry):
         nonlocal all_result_verify, result
@@ -179,7 +173,7 @@ async def get_epg(names=None, callback=None, extra_entries=None):
                 )
             except Exception as e:
                 print(e, flush=True)
-                disable_reason = t("msg.auto_disable_request_failed")
+                disable_reason = "请求失败"
             if response:
                 content = _normalize_epg_content(response.content, request_url=request_url, response=response)
                 if content:
@@ -198,26 +192,22 @@ async def get_epg(names=None, callback=None, extra_entries=None):
                                     all_result_verify.add(display_name)
                                     result[display_name] = programmes[channel_id]
                     if not entry_matched and not disable_reason:
-                        disable_reason = t("msg.auto_disable_no_match")
+                        disable_reason = "没有匹配到符合条件的值"
                 elif not disable_reason:
-                    disable_reason = t("msg.auto_disable_empty_content")
+                    disable_reason = "内容为空"
             elif not disable_reason:
-                disable_reason = t("msg.auto_disable_request_failed")
+                disable_reason = "请求失败"
         except Exception as e:
-            print(t("msg.error_name_info").format(name=request_url, info=e), flush=True)
+            print(f"❌ {request_url} 出错：{e}", flush=True)
             if not disable_reason:
-                disable_reason = t("msg.auto_disable_request_failed")
+                disable_reason = "请求失败"
         finally:
             if disable_reason:
                 _mark_disabled(source_url, disable_reason)
             pbar.update()
             if callback:
                 callback(
-                    t("msg.progress_desc").format(name=f"{t("pbar.get")}{t("name.epg")}",
-                                                  remaining_total=urls_len - pbar.n,
-                                                  item_name=t("pbar.source"),
-                                                  remaining_time=get_pbar_remaining(n=pbar.n, total=pbar.total,
-                                                                                    start_time=start_time)),
+                    f"正在进行获取EPG源，剩余{urls_len - pbar.n}个源，预计完成剩余时间：{get_pbar_remaining(n=pbar.n, total=pbar.total, start_time=start_time)}",
                     int((pbar.n / urls_len) * 100),
                 )
 
@@ -235,6 +225,5 @@ async def get_epg(names=None, callback=None, extra_entries=None):
         counts = disable_urls_in_file(constants.epg_path, disabled_urls)
         active_count = counts["active"]
         disabled_count = counts["disabled"]
-    print(t("msg.auto_disable_source_done").format(name=t("name.epg"), active_count=active_count,
-                                                   disabled_count=disabled_count), flush=True)
+    print(f"🆗 EPG源: ✅ 有效地址数量：{active_count}，⛔ 停用地址数量：{disabled_count}", flush=True)
     return result

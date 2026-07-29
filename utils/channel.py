@@ -16,7 +16,6 @@ from utils.alias import Alias
 from utils.config import config
 from utils.ffmpeg import check_ffmpeg_installed_status
 from utils.frozen import is_url_frozen, mark_url_bad, mark_url_good
-from utils.i18n import t
 from utils.ip_checker import IPChecker
 from utils.speed import (
     create_speed_test_session,
@@ -184,7 +183,7 @@ def get_channel_data_from_file(channels, file, whitelist_maps, blacklist,
     current_category = ""
     matched_local_names = set()
     matched_hls_names = set()
-    unmatch_category = t("content.unmatch_channel")
+    unmatch_category = "♻️未匹配频道"
 
     def append_unmatch_data(name: str, info_list: list):
         category_dict = channels[unmatch_category]
@@ -309,11 +308,11 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
     blacklist_count = len(blacklist)
     channel_logo_count = count_files_by_ext(resource_path(constants.channel_logo_path), [config.logo_type])
     if whitelist_count:
-        print(t("msg.whitelist_found").format(count=whitelist_count))
+        print(f"✅ 白名单接口规则数量：{whitelist_count}")
     if blacklist_count:
-        print(t("msg.blacklist_found").format(count=blacklist_count))
+        print(f"✅ 黑名单接口规则数量：{blacklist_count}")
     if channel_logo_count:
-        print(t("msg.channel_logo_found").format(count=channel_logo_count))
+        print(f"✅ 本地台标数量：{channel_logo_count}")
 
     if os.path.exists(user_source_file):
         with open(user_source_file, "r", encoding="utf-8") as file:
@@ -367,10 +366,10 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
                         else:
                             unmatched_history[name].extend(info_list)
         except Exception as e:
-            print(t("msg.error_load_cache").format(info=e))
+            print(f"❌ 加载缓存文件出错：{e}")
 
         if unmatched_history and config.open_unmatch_category:
-            unmatch_category = t("content.unmatch_channel")
+            unmatch_category = "♻️未匹配频道"
             for name, info_list in unmatched_history.items():
                 append_data_to_info_data(
                     channels,
@@ -577,7 +576,7 @@ def append_data_to_info_data(
             existing_map[url] = len(channel_list) - 1
 
         except Exception as e:
-            print(t("msg.error_append_channel_data").format(info=e))
+            print(f"❌ 追加频道数据错误：{e}")
             continue
 
 
@@ -600,17 +599,17 @@ def append_old_data_to_info_data(info_data, cate, name, data, whitelist_maps=Non
             print(f"{label}: {items_len}", end=", ")
 
     whitelist_data = [item for item in data if item["origin"] == "whitelist"]
-    append_and_print(whitelist_data, "whitelist", t("name.whitelist"))
+    append_and_print(whitelist_data, "whitelist", "白名单")
 
     if open_local:
         local_data = [item for item in data if item["origin"] == "local"]
-        append_and_print(local_data, "local", t("name.local"))
+        append_and_print(local_data, "local", "本地源")
 
 
 
     if open_history:
         history_data = [item for item in data if item["origin"] not in ["hls", "local", "whitelist"]]
-        append_and_print(history_data, None, t("name.history"))
+        append_and_print(history_data, None, "历史源")
 
 
 def print_channel_number(data: CategoryChannelData, cate: str, name: str):
@@ -621,7 +620,7 @@ def print_channel_number(data: CategoryChannelData, cate: str, name: str):
     print("IPv4:", len([channel for channel in channel_list if channel["ipv_type"] == "ipv4"]), end=", ")
     print("IPv6:", len([channel for channel in channel_list if channel["ipv_type"] == "ipv6"]), end=", ")
     print(
-        f"{t("name.total")}:",
+        "总计:",
         len(channel_list),
     )
 
@@ -640,7 +639,7 @@ def append_total_data(
     total_result = [
         ("subscribe", subscribe_result),
     ]
-    unmatch_category = t("content.unmatch_channel")
+    unmatch_category = "♻️未匹配频道"
     source_names = {
         format_channel_name(name)
         for cate, channel_obj in items
@@ -683,7 +682,8 @@ def append_total_data(
                         blacklist=blacklist,
                         ipv_type_data=url_hosts_ipv_type
                     )
-                    print(f"{t(f"name.{method}")}:", len(name_results), end=", ")
+                    method_label = "订阅源" if method == "subscribe" else method
+                    print(f"{method_label}:", len(name_results), end=", ")
             print_channel_number(data, cate, name)
 
     if config.open_unmatch_category and subscribe_result:
@@ -789,16 +789,16 @@ async def test_speed(data, ipv6=False, callback=None, on_task_complete=None):
 
             try:
                 origin = merged.get('origin')
-                origin_name = t(f"name.{origin}") if origin else origin
+                origin_name = "订阅源" if origin == "subscribe" else ("本地源" if origin == "local" else ("白名单" if origin == "whitelist" else origin))
                 result_logger.info(
-                    f"ID: {merged.get('id')}, {t('name.name')}: {name}, "
-                    f"{t('pbar.url')}: {merged.get('url')}, {t('name.from')}: {origin_name}, "
-                    f"{t('name.ipv_type')}: {merged.get('ipv_type')}, {t('name.location')}: {merged.get('location')}, "
-                    f"{t('name.isp')}: {merged.get('isp')}, "
-                    f"{t('name.delay')}: {merged.get('delay') or -1} ms, {t('name.speed')}: {(merged.get('speed') or 0):.2f} M/s, "
-                    f"{t('name.resolution')}: {merged.get('resolution')}, {t('name.fps')}: {merged.get('fps') or t('name.unknown')}, "
-                    f"{t('name.video_codec')}: {merged.get('video_codec') or t('name.unknown')}, "
-                    f"{t('name.audio_codec')}: {merged.get('audio_codec') or t('name.unknown')}"
+                    f"ID: {merged.get('id')}, 名称: {name}, "
+                    f"接口: {merged.get('url')}, 来源: {origin_name}, "
+                    f"IP类型: {merged.get('ipv_type')}, 地区: {merged.get('location')}, "
+                    f"运营商: {merged.get('isp')}, "
+                    f"延迟: {merged.get('delay') or -1} ms, 速度: {(merged.get('speed') or 0):.2f} M/s, "
+                    f"分辨率: {merged.get('resolution')}, 帧率: {merged.get('fps') or '未知'}, "
+                    f"视频编码: {merged.get('video_codec') or '未知'}, "
+                    f"音频编码: {merged.get('audio_codec') or '未知'}"
                 )
             except Exception:
                 pass
@@ -887,7 +887,7 @@ def sort_channel_result(channel_data, result=None, filter_host=False, ipv6_suppo
     retain = retain_origin
     speed_lookup = get_speed_result
     sorter = get_sort_result
-    unmatch_category = t("content.unmatch_channel")
+    unmatch_category = "♻️未匹配频道"
 
     for c in categories:
         obj = channel_data.get(c, {}) or {}
@@ -968,15 +968,15 @@ def generate_channel_statistic(logger, cate, name, values):
                       v.get('fps')).replace('.', '').isdigit()]
     most_video = Counter(video_codecs).most_common(1)
     most_audio = Counter(audio_codecs).most_common(1)
-    most_video_str = most_video[0][0] if most_video else t('name.unknown')
-    most_audio_str = most_audio[0][0] if most_audio else t('name.unknown')
+    most_video_str = most_video[0][0] if most_video else '未知'
+    most_audio_str = most_audio[0][0] if most_audio else '未知'
     avg_fps = (sum(fps_values) / len(fps_values)) if fps_values else None
     if config.open_full_speed_test:
-        content = f"{f"{t('name.category')}: {cate}, {t('name.name')}: {name}, {t('name.total')}: {total}, {t('name.valid')}: {valid}, {t('name.valid_percent')}: {valid_rate:.2f}%, IPv4: {ipv4_count}, IPv6: {ipv6_count}, {t('name.min_delay')}: {min_delay} ms, {t('name.max_speed')}: {max_speed:.2f} M/s, {t('name.average_speed')}: {avg_speed:.2f} M/s, {t('name.max_resolution')}: {max_resolution}, {t('name.avg_fps')}: {f"{avg_fps:.2f}" if avg_fps is not None else t('name.unknown')}, {t('name.video_codec')}: {most_video_str}, {t('name.audio_codec')}: {most_audio_str}"}"
+        content = f"分类: {cate}, 名称: {name}, 总计: {total}, 有效: {valid}, 有效率: {valid_rate:.2f}%, IPv4: {ipv4_count}, IPv6: {ipv6_count}, 最小延迟: {min_delay} ms, 最大速度: {max_speed:.2f} M/s, 平均速度: {avg_speed:.2f} M/s, 最大分辨率: {max_resolution}, 平均帧率: {f'{avg_fps:.2f}' if avg_fps is not None else '未知'}, 视频编码: {most_video_str}, 音频编码: {most_audio_str}"
         logger.info(content)
         print(f"📊 {content}")
     else:
-        content = f"{f"{t('name.category')}: {cate}, {t('name.name')}: {name}, {t('name.valid')}: {valid}, IPv4: {ipv4_count}, IPv6: {ipv6_count}, {t('name.min_delay')}: {min_delay} ms, {t('name.max_speed')}: {max_speed:.2f} M/s, {t('name.average_speed')}: {avg_speed:.2f} M/s, {t('name.max_resolution')}: {max_resolution}, {t('name.avg_fps')}: {f"{avg_fps:.2f}" if avg_fps is not None else t('name.unknown')}, {t('name.video_codec')}: {most_video_str}, {t('name.audio_codec')}: {most_audio_str}"}"
+        content = f"分类: {cate}, 名称: {name}, 有效: {valid}, IPv4: {ipv4_count}, IPv6: {ipv6_count}, 最小延迟: {min_delay} ms, 最大速度: {max_speed:.2f} M/s, 平均速度: {avg_speed:.2f} M/s, 最大分辨率: {max_resolution}, 平均帧率: {f'{avg_fps:.2f}' if avg_fps is not None else '未知'}, 视频编码: {most_video_str}, 音频编码: {most_audio_str}"
         logger.info(content)
         print(f"📊 {content}")
 
@@ -1014,7 +1014,7 @@ def process_write_content(
     custom_print.disable = not enable_log
     rtmp_type = ["hls"] if hls_url else []
     open_url_info = config.open_url_info
-    unmatch_category = t("content.unmatch_channel")
+    unmatch_category = "♻️未匹配频道"
     for cate, channel_obj in data.items():
         content += f"{'\n\n' if not first_cate else ''}{cate},#genre#"
         first_cate = False
@@ -1041,8 +1041,8 @@ def process_write_content(
                 total_item_url = f"{hls_url}/{item['id']}.m3u8" if hls_url else item_url
                 content += f"\n{name},{total_item_url}"
     if open_empty_category and no_result_name and is_last:
-        custom_print(f"\n{t("msg.no_result_channel")}")
-        content += f"\n\n{t("content.no_result_channel")},#genre#"
+        custom_print("\n🈚 无结果频道名称：")
+        content += "\n\n🈚无结果频道,#genre#"
         for i, name in enumerate(no_result_name):
             end_char = ", " if i < len(no_result_name) - 1 else ""
             custom_print(name, end=end_char)
@@ -1082,7 +1082,7 @@ def process_write_content(
         )
         now = get_datetime_now()
         update_time_item_url = update_time_item["url"]
-        update_title = t("content.update_time") if is_last else t("content.update_running")
+        update_title = "⏰更新时间" if is_last else "⏰正在更新中，刷新获取最新结果"
         update_time_extra_info = update_time_item.get("extra_info", "")
         if open_url_info and update_time_extra_info:
             update_time_item_url = add_url_info(update_time_item_url, update_time_extra_info)
@@ -1111,7 +1111,7 @@ def process_write_content(
             from utils.pg_db import save_to_postgresql
             save_to_postgresql(json_data)
     except Exception as e:
-        print(t("msg.write_error").format(info=f"convert json error: {e}"), flush=True)
+        print(f"❌ 写入结果文件出错：convert json error: {e}", flush=True)
         return False
     return True
 
@@ -1122,7 +1122,7 @@ def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=
     """
     try:
         if not skip_print:
-            print(t("msg.writing_result"), flush=True)
+            print("正在写入结果，生成结果文件...", flush=True)
         open_empty_category = config.open_empty_category
         ipv_type_prefer = list(config.ipv_type_prefer)
         if any(pref == "auto" for pref in ipv_type_prefer):
@@ -1145,6 +1145,6 @@ def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=
                 is_last=is_last
             )
         if not skip_print:
-            print(t("msg.write_success"), flush=True)
+            print("✅ 结果文件生成成功", flush=True)
     except Exception as e:
-        print(t("msg.write_error").format(info=e), flush=True)
+        print(f"❌ 写入结果文件出错：{e}", flush=True)
