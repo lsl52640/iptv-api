@@ -1015,11 +1015,17 @@ def process_write_content(
     rtmp_type = ["hls"] if hls_url else []
     open_url_info = config.open_url_info
     unmatch_category = "♻️未匹配频道"
+    seen_channel_names = set()
+
     for cate, channel_obj in data.items():
-        content += f"{'\n\n' if not first_cate else ''}{cate},#genre#"
-        first_cate = False
+        cate_content = ""
+        category_has_channels = False
         channel_obj_keys = channel_obj.keys()
         for i, name in enumerate(channel_obj_keys):
+            formatted_name = format_channel_name(name)
+            if name in seen_channel_names or (formatted_name and formatted_name in seen_channel_names):
+                continue
+
             info_list = data.get(cate, {}).get(name, [])
             channel_urls = _get_total_urls_cached(
                 info_list,
@@ -1030,23 +1036,40 @@ def process_write_content(
             )
             result_data[name].extend(channel_urls)
             if not channel_urls:
-                if open_empty_category:
+                if open_empty_category and name not in no_result_name:
                     no_result_name.append(name)
                 continue
+
+            seen_channel_names.add(name)
+            if formatted_name:
+                seen_channel_names.add(formatted_name)
+
+            category_has_channels = True
             for item in channel_urls:
                 item_url = item["url"]
                 extra_info = item.get("extra_info", "")
                 if open_url_info and extra_info:
                     item_url = add_url_info(item_url, extra_info)
                 total_item_url = f"{hls_url}/{item['id']}.m3u8" if hls_url else item_url
-                content += f"\n{name},{total_item_url}"
+                cate_content += f"\n{name},{total_item_url}"
+
+        if category_has_channels:
+            content += f"{'\n\n' if not first_cate else ''}{cate},#genre#{cate_content}"
+            first_cate = False
+
     if open_empty_category and no_result_name and is_last:
-        custom_print("\n🈚 无结果频道名称：")
-        content += "\n\n🈚无结果频道,#genre#"
-        for i, name in enumerate(no_result_name):
-            end_char = ", " if i < len(no_result_name) - 1 else ""
-            custom_print(name, end=end_char)
-            content += f"\n{name},url"
+        filtered_no_result = [
+            n for n in no_result_name
+            if n not in seen_channel_names and format_channel_name(n) not in seen_channel_names
+        ]
+        if filtered_no_result:
+            custom_print("\n🈚 无结果频道名称：")
+            content += f"{'\n\n' if not first_cate else ''}🈚无结果频道,#genre#"
+            for i, name in enumerate(filtered_no_result):
+                end_char = ", " if i < len(filtered_no_result) - 1 else ""
+                custom_print(name, end=end_char)
+                content += f"\n{name},url"
+
     render_hasher = hashlib.sha256(content.encode("utf-8"))
     render_hasher.update(
         repr((
@@ -1067,6 +1090,7 @@ def process_write_content(
     m3u_path = os.path.splitext(path)[0] + ".m3u"
     if _WRITTEN_CONTENT_DIGESTS.get(path) == render_signature and os.path.exists(path) and os.path.exists(m3u_path):
         return False
+
     if config.open_update_time:
         update_time_item = next(
             (urls[0] for channel_obj in data.values()
@@ -1086,16 +1110,32 @@ def process_write_content(
         update_time_extra_info = update_time_item.get("extra_info", "")
         if open_url_info and update_time_extra_info:
             update_time_item_url = add_url_info(update_time_item_url, update_time_extra_info)
-        value = f"{hls_url}/{update_time_item["id"]}.m3u8" if hls_url else update_time_item_url
+        value = f"{hls_url}/{update_time_item['id']}.m3u8" if hls_url else update_time_item_url
         if config.update_time_position == "top":
             content = f"{update_title},#genre#\n{now},{value}\n\n{content}"
         else:
             content += f"\n\n{update_title},#genre#\n{now},{value}"
+
     try:
+        target_dir = os.path.dirname(path) or "."
+        os.makedirs(target_dir, exist_ok=True)
+
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", delete=False, dir=target_dir,
+                                          prefix=os.path.basename(path) + ".tmp.") as tmpf:
+            tmpf.write(content)
+            tmp_path = tmpf.name
+        os.replace(tmp_path, path)
+        try:
+            os.chmod(path, 0o644)
+        except Exception:
+            pass
+
+        if config.open_m3u_result:
+            from utils.tools import convert_to_m3u
+            convert_to_m3u(path=path, first_channel_name=first_channel_name, data=result_data, content=content)
+
         json_data = convert_to_json_v1(content=content)
         json_path = os.path.splitext(path)[0] + ".json"
-        target_dir = os.path.dirname(json_path) or "."
-        os.makedirs(target_dir, exist_ok=True)
         with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", delete=False, dir=target_dir,
                                           prefix=os.path.basename(json_path) + ".tmp.") as tmpf:
             import json
@@ -1106,6 +1146,7 @@ def process_write_content(
             os.chmod(json_path, 0o644)
         except Exception:
             pass
+
         _WRITTEN_CONTENT_DIGESTS[path] = render_signature
         if config.open_pg:
             from utils.pg_db import save_to_postgresql

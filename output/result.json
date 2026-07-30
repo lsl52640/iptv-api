@@ -1,7 +1,7 @@
 [
     {
         "name": "CCTV-1",
-        "tvg_id": "CCTV-1",
+        "tvg_id": "cctv1",
         "tvg_name": "CCTV-1",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-1.png",
         "group": "📺央视频道",
@@ -15,7 +15,7 @@
     },
     {
         "name": "CCTV-2",
-        "tvg_id": "CCTV-2",
+        "tvg_id": "cctv2",
         "tvg_name": "CCTV-2",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-2.png",
         "group": "📺央视频道",
@@ -29,7 +29,7 @@
     },
     {
         "name": "CCTV-3",
-        "tvg_id": "CCTV-3",
+        "tvg_id": "cctv3",
         "tvg_name": "CCTV-3",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-3.png",
         "group": "📺央视频道",
@@ -43,7 +43,7 @@
     },
     {
         "name": "CCTV-4",
-        "tvg_id": "CCTV-4",
+        "tvg_id": "cctv4",
         "tvg_name": "CCTV-4",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-4.png",
         "group": "📺央视频道",
@@ -57,7 +57,7 @@
     },
     {
         "name": "CCTV-5",
-        "tvg_id": "CCTV-5",
+        "tvg_id": "cctv5",
         "tvg_name": "CCTV-5",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5.png",
         "group": "📺央视频道",
@@ -71,7 +71,7 @@
     },
     {
         "name": "CCTV-5+",
-        "tvg_id": "CCTV-5+",
+        "tvg_id": "cctv5plus",
         "tvg_name": "CCTV-5+",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png",
         "group": "📺央视频道",
@@ -85,7 +85,7 @@
     },
     {
         "name": "CCTV-6",
-        "tvg_id": "CCTV-6",
+        "tvg_id": "cctv6",
         "tvg_name": "CCTV-6",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-6.png",
         "group": "📺央视频道",
@@ -99,7 +99,7 @@
     },
     {
         "name": "CCTV-7",
-        "tvg_id": "CCTV-7",
+        "tvg_id": "cctv7",
         "tvg_name": "CCTV-7",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-7.png",
         "group": "📺央视频道",
@@ -113,7 +113,7 @@
     },
     {
         "name": "CCTV-8",
-        "tvg_id": "CCTV-8",
+        "tvg_id": "cctv8",
         "tvg_name": "CCTV-8",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-8.png",
         "group": "📺央视频道",
@@ -127,7 +127,7 @@
     },
     {
         "name": "CCTV-9",
-        "tvg_id": "CCTV-9",
+        "tvg_id": "cctv9",
         "tvg_name": "CCTV-9",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-9.png",
         "group": "📺央视频道",
@@ -141,7 +141,7 @@
     },
     {
         "name": "CCTV-10",
-        "tvg_id": "CCTV-10",
+        "tvg_id": "cctv10",
         "tvg_name": "CCTV-10",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-10.png",
         "group": "📺央视频道",
@@ -155,7 +155,7 @@
     },
     {
         "name": "CCTV-11",
-        "tvg_id": "CCTV-11",
+        "tvg_id": "cctv11",
         "tvg_name": "CCTV-11",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-11.png",
         "group": "📺央视频道",
@@ -169,7 +169,7 @@
     },
     {
         "name": "CCTV-12",
-        "tvg_id": "CCTV-12",
+        "tvg_id": "cctv12",
         "tvg_name": "CCTV-12",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-12.png",
         "group": "📺央视频道",
@@ -183,7 +183,7 @@
     },
     {
         "name": "CCTV-13",
-        "tvg_id": "CCTV-13",
+        "tvg_id": "cctv13",
         "tvg_name": "CCTV-13",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-13.png",
         "group": "📺央视频道",
@@ -197,7 +197,7 @@
     },
     {
         "name": "CCTV-14",
-        "tvg_id": "CCTV-14",
+        "tvg_id": "cctv14",
         "tvg_name": "CCTV-14",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-14.png",
         "group": "📺央视频道",
@@ -211,7 +211,7 @@
     },
     {
         "name": "CCTV-15",
-        "tvg_id": "CCTV-15",
+        "tvg_id": "cctv15",
         "tvg_name": "CCTV-15",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-15.png",
         "group": "📺央视频道",
@@ -225,7 +225,7 @@
     },
     {
         "name": "CCTV-16",
-        "tvg_id": "CCTV-16",
+        "tvg_id": "cctv16",
         "tvg_name": "CCTV-16",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-16.png",
         "group": "📺央视频道",
@@ -238,7 +238,7 @@
     },
     {
         "name": "CCTV-17",
-        "tvg_id": "CCTV-17",
+        "tvg_id": "cctv17",
         "tvg_name": "CCTV-17",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-17.png",
         "group": "📺央视频道",
@@ -250,7 +250,7 @@
     },
     {
         "name": "CETV-1",
-        "tvg_id": "CETV-1",
+        "tvg_id": "cetv1",
         "tvg_name": "CETV-1",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-1.png",
         "group": "📺央视频道",
@@ -264,7 +264,7 @@
     },
     {
         "name": "CETV-2",
-        "tvg_id": "CETV-2",
+        "tvg_id": "cetv2",
         "tvg_name": "CETV-2",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-2.png",
         "group": "📺央视频道",
@@ -278,7 +278,7 @@
     },
     {
         "name": "CETV-3",
-        "tvg_id": "CETV-3",
+        "tvg_id": "cetv3",
         "tvg_name": "CETV-3",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-3.png",
         "group": "📺央视频道",
@@ -292,7 +292,7 @@
     },
     {
         "name": "CETV-4",
-        "tvg_id": "CETV-4",
+        "tvg_id": "cetv4",
         "tvg_name": "CETV-4",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/CETV-4.png",
         "group": "📺央视频道",
@@ -306,7 +306,7 @@
     },
     {
         "name": "广东卫视",
-        "tvg_id": "广东卫视",
+        "tvg_id": "guangdong",
         "tvg_name": "广东卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东卫视.png",
         "group": "📡卫视频道",
@@ -320,7 +320,7 @@
     },
     {
         "name": "香港卫视",
-        "tvg_id": "香港卫视",
+        "tvg_id": "hk",
         "tvg_name": "香港卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/香港卫视.png",
         "group": "📡卫视频道",
@@ -334,7 +334,7 @@
     },
     {
         "name": "浙江卫视",
-        "tvg_id": "浙江卫视",
+        "tvg_id": "zhejiang",
         "tvg_name": "浙江卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/浙江卫视.png",
         "group": "📡卫视频道",
@@ -348,7 +348,7 @@
     },
     {
         "name": "湖南卫视",
-        "tvg_id": "湖南卫视",
+        "tvg_id": "hunan",
         "tvg_name": "湖南卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/湖南卫视.png",
         "group": "📡卫视频道",
@@ -362,7 +362,7 @@
     },
     {
         "name": "北京卫视",
-        "tvg_id": "北京卫视",
+        "tvg_id": "beijing",
         "tvg_name": "北京卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/北京卫视.png",
         "group": "📡卫视频道",
@@ -375,7 +375,7 @@
     },
     {
         "name": "湖北卫视",
-        "tvg_id": "湖北卫视",
+        "tvg_id": "hubei",
         "tvg_name": "湖北卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/湖北卫视.png",
         "group": "📡卫视频道",
@@ -388,7 +388,7 @@
     },
     {
         "name": "黑龙江卫视",
-        "tvg_id": "黑龙江卫视",
+        "tvg_id": "heilongjiang",
         "tvg_name": "黑龙江卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png",
         "group": "📡卫视频道",
@@ -402,7 +402,7 @@
     },
     {
         "name": "安徽卫视",
-        "tvg_id": "安徽卫视",
+        "tvg_id": "anhui",
         "tvg_name": "安徽卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/安徽卫视.png",
         "group": "📡卫视频道",
@@ -414,7 +414,7 @@
     },
     {
         "name": "重庆卫视",
-        "tvg_id": "重庆卫视",
+        "tvg_id": "chongqing",
         "tvg_name": "重庆卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/重庆卫视.png",
         "group": "📡卫视频道",
@@ -428,7 +428,7 @@
     },
     {
         "name": "东方卫视",
-        "tvg_id": "东方卫视",
+        "tvg_id": "dongfang",
         "tvg_name": "东方卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/东方卫视.png",
         "group": "📡卫视频道",
@@ -442,7 +442,7 @@
     },
     {
         "name": "东南卫视",
-        "tvg_id": "东南卫视",
+        "tvg_id": "dongnan",
         "tvg_name": "东南卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/东南卫视.png",
         "group": "📡卫视频道",
@@ -456,7 +456,7 @@
     },
     {
         "name": "甘肃卫视",
-        "tvg_id": "甘肃卫视",
+        "tvg_id": "gansu",
         "tvg_name": "甘肃卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/甘肃卫视.png",
         "group": "📡卫视频道",
@@ -468,7 +468,7 @@
     },
     {
         "name": "广西卫视",
-        "tvg_id": "广西卫视",
+        "tvg_id": "guangxi",
         "tvg_name": "广西卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广西卫视.png",
         "group": "📡卫视频道",
@@ -482,7 +482,7 @@
     },
     {
         "name": "贵州卫视",
-        "tvg_id": "贵州卫视",
+        "tvg_id": "guizhou",
         "tvg_name": "贵州卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/贵州卫视.png",
         "group": "📡卫视频道",
@@ -494,7 +494,7 @@
     },
     {
         "name": "海南卫视",
-        "tvg_id": "海南卫视",
+        "tvg_id": "hainan",
         "tvg_name": "海南卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/海南卫视.png",
         "group": "📡卫视频道",
@@ -506,7 +506,7 @@
     },
     {
         "name": "河北卫视",
-        "tvg_id": "河北卫视",
+        "tvg_id": "hebei",
         "tvg_name": "河北卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/河北卫视.png",
         "group": "📡卫视频道",
@@ -520,7 +520,7 @@
     },
     {
         "name": "河南卫视",
-        "tvg_id": "河南卫视",
+        "tvg_id": "henan",
         "tvg_name": "河南卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/河南卫视.png",
         "group": "📡卫视频道",
@@ -531,7 +531,7 @@
     },
     {
         "name": "吉林卫视",
-        "tvg_id": "吉林卫视",
+        "tvg_id": "jilin",
         "tvg_name": "吉林卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/吉林卫视.png",
         "group": "📡卫视频道",
@@ -544,7 +544,7 @@
     },
     {
         "name": "江苏卫视",
-        "tvg_id": "江苏卫视",
+        "tvg_id": "jiangsu",
         "tvg_name": "江苏卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/江苏卫视.png",
         "group": "📡卫视频道",
@@ -558,7 +558,7 @@
     },
     {
         "name": "江西卫视",
-        "tvg_id": "江西卫视",
+        "tvg_id": "jiangxi",
         "tvg_name": "江西卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/江西卫视.png",
         "group": "📡卫视频道",
@@ -572,7 +572,7 @@
     },
     {
         "name": "辽宁卫视",
-        "tvg_id": "辽宁卫视",
+        "tvg_id": "liaoning",
         "tvg_name": "辽宁卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png",
         "group": "📡卫视频道",
@@ -586,7 +586,7 @@
     },
     {
         "name": "内蒙古卫视",
-        "tvg_id": "内蒙古卫视",
+        "tvg_id": "neimenggu",
         "tvg_name": "内蒙古卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/内蒙古卫视.png",
         "group": "📡卫视频道",
@@ -598,7 +598,7 @@
     },
     {
         "name": "宁夏卫视",
-        "tvg_id": "宁夏卫视",
+        "tvg_id": "ningxia",
         "tvg_name": "宁夏卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png",
         "group": "📡卫视频道",
@@ -610,7 +610,7 @@
     },
     {
         "name": "青海卫视",
-        "tvg_id": "青海卫视",
+        "tvg_id": "qinghai",
         "tvg_name": "青海卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/青海卫视.png",
         "group": "📡卫视频道",
@@ -622,7 +622,7 @@
     },
     {
         "name": "山东卫视",
-        "tvg_id": "山东卫视",
+        "tvg_id": "shandong",
         "tvg_name": "山东卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/山东卫视.png",
         "group": "📡卫视频道",
@@ -636,7 +636,7 @@
     },
     {
         "name": "山西卫视",
-        "tvg_id": "山西卫视",
+        "tvg_id": "shanxi",
         "tvg_name": "山西卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/山西卫视.png",
         "group": "📡卫视频道",
@@ -648,7 +648,7 @@
     },
     {
         "name": "陕西卫视",
-        "tvg_id": "陕西卫视",
+        "tvg_id": "shaanxi",
         "tvg_name": "陕西卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/陕西卫视.png",
         "group": "📡卫视频道",
@@ -659,7 +659,7 @@
     },
     {
         "name": "四川卫视",
-        "tvg_id": "四川卫视",
+        "tvg_id": "sichuan",
         "tvg_name": "四川卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/四川卫视.png",
         "group": "📡卫视频道",
@@ -671,7 +671,7 @@
     },
     {
         "name": "深圳卫视",
-        "tvg_id": "深圳卫视",
+        "tvg_id": "shenzhen",
         "tvg_name": "深圳卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/深圳卫视.png",
         "group": "📡卫视频道",
@@ -683,7 +683,7 @@
     },
     {
         "name": "三沙卫视",
-        "tvg_id": "三沙卫视",
+        "tvg_id": "sansha",
         "tvg_name": "三沙卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/三沙卫视.png",
         "group": "📡卫视频道",
@@ -693,7 +693,7 @@
     },
     {
         "name": "天津卫视",
-        "tvg_id": "天津卫视",
+        "tvg_id": "tianjin",
         "tvg_name": "天津卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/天津卫视.png",
         "group": "📡卫视频道",
@@ -707,7 +707,7 @@
     },
     {
         "name": "西藏卫视",
-        "tvg_id": "西藏卫视",
+        "tvg_id": "xizang",
         "tvg_name": "西藏卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/西藏卫视.png",
         "group": "📡卫视频道",
@@ -717,7 +717,7 @@
     },
     {
         "name": "新疆卫视",
-        "tvg_id": "新疆卫视",
+        "tvg_id": "xinjiang",
         "tvg_name": "新疆卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/新疆卫视.png",
         "group": "📡卫视频道",
@@ -728,7 +728,7 @@
     },
     {
         "name": "云南卫视",
-        "tvg_id": "云南卫视",
+        "tvg_id": "yunnan",
         "tvg_name": "云南卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/云南卫视.png",
         "group": "📡卫视频道",
@@ -740,7 +740,7 @@
     },
     {
         "name": "广东珠江",
-        "tvg_id": "广东珠江",
+        "tvg_id": "zhujiang",
         "tvg_name": "广东珠江",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东珠江.png",
         "group": "☘️广东频道",
@@ -754,7 +754,7 @@
     },
     {
         "name": "广东体育",
-        "tvg_id": "广东体育",
+        "tvg_id": "gdtiyu",
         "tvg_name": "广东体育",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东体育.png",
         "group": "☘️广东频道",
@@ -768,7 +768,7 @@
     },
     {
         "name": "广东新闻",
-        "tvg_id": "广东新闻",
+        "tvg_id": "gdxinwen",
         "tvg_name": "广东新闻",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东新闻.png",
         "group": "☘️广东频道",
@@ -780,22 +780,8 @@
         ]
     },
     {
-        "name": "广东卫视",
-        "tvg_id": "广东卫视",
-        "tvg_name": "广东卫视",
-        "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东卫视.png",
-        "group": "☘️广东频道",
-        "url": [
-            "https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIyXzk0NjI1OTUwNTA3XzBfMw==_b_B81ddda927d33445d544befd008e60109.mp4",
-            "http://iptv.huuc.edu.cn/hls/gdhd.m3u8",
-            "https://zby.130519.xyz/PLTV/11/224/3221225731/index.m3u8",
-            "https://iptv.catvod.com/migu?id=608831231&token=af464be4890e0f4f6625b09a760c5f57",
-            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E2MGyx659D_aaDPP0qt3NgA%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
-        ]
-    },
-    {
         "name": "广东民生",
-        "tvg_id": "广东民生",
+        "tvg_id": "gdminsheng",
         "tvg_name": "广东民生",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广东民生.png",
         "group": "☘️广东频道",
@@ -807,7 +793,7 @@
     },
     {
         "name": "大湾区卫视",
-        "tvg_id": "大湾区卫视",
+        "tvg_id": "dawanqu",
         "tvg_name": "大湾区卫视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png",
         "group": "☘️广东频道",
@@ -821,7 +807,7 @@
     },
     {
         "name": "广州综合",
-        "tvg_id": "广州综合",
+        "tvg_id": "gzzonghe",
         "tvg_name": "广州综合",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广州综合.png",
         "group": "☘️广东频道",
@@ -832,7 +818,7 @@
     },
     {
         "name": "广州影视",
-        "tvg_id": "广州影视",
+        "tvg_id": "gzyingshi",
         "tvg_name": "广州影视",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广州影视.png",
         "group": "☘️广东频道",
@@ -846,7 +832,7 @@
     },
     {
         "name": "广州竞赛",
-        "tvg_id": "广州竞赛",
+        "tvg_id": "gzjingsai",
         "tvg_name": "广州竞赛",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/广州竞赛.png",
         "group": "☘️广东频道",
@@ -860,7 +846,7 @@
     },
     {
         "name": "江门综合",
-        "tvg_id": "江门综合",
+        "tvg_id": "jmzonghe",
         "tvg_name": "江门综合",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/江门综合.png",
         "group": "☘️广东频道",
@@ -874,7 +860,7 @@
     },
     {
         "name": "佛山综合",
-        "tvg_id": "佛山综合",
+        "tvg_id": "fszonghe",
         "tvg_name": "佛山综合",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/佛山综合.png",
         "group": "☘️广东频道",
@@ -887,20 +873,8 @@
         ]
     },
     {
-        "name": "深圳卫视",
-        "tvg_id": "深圳卫视",
-        "tvg_name": "深圳卫视",
-        "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/深圳卫视.png",
-        "group": "☘️广东频道",
-        "url": [
-            "http://iptv.huuc.edu.cn/hls/szhd.m3u8",
-            "https://zby.130519.xyz/PLTV/11/224/3221225728/index.m3u8",
-            "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226959/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EGrVNEZREjuNVKiTJo2mtwg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND"
-        ]
-    },
-    {
         "name": "汕头综合",
-        "tvg_id": "汕头综合",
+        "tvg_id": "stzonghe",
         "tvg_name": "汕头综合",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/汕头综合.png",
         "group": "☘️广东频道",
@@ -914,7 +888,7 @@
     },
     {
         "name": "汕头经济",
-        "tvg_id": "汕头经济",
+        "tvg_id": "stjingji",
         "tvg_name": "汕头经济",
         "tvg_logo": "https://www.xn--rgv465a.top/tvlogo/汕头经济.png",
         "group": "☘️广东频道",

@@ -435,6 +435,114 @@ def get_logo_url():
     return logo_url
 
 
+def get_english_name(name: str) -> str:
+    """
+    Get the English name/pinyin for a channel.
+    """
+    if not name:
+        return ""
+    n = name.strip().lower()
+    mapping = {
+        "cctv-1": "cctv1",
+        "cctv-2": "cctv2",
+        "cctv-3": "cctv3",
+        "cctv-4": "cctv4",
+        "cctv-5": "cctv5",
+        "cctv-5+": "cctv5plus",
+        "cctv-6": "cctv6",
+        "cctv-7": "cctv7",
+        "cctv-8": "cctv8",
+        "cctv-9": "cctv9",
+        "cctv-10": "cctv10",
+        "cctv-11": "cctv11",
+        "cctv-12": "cctv12",
+        "cctv-13": "cctv13",
+        "cctv-14": "cctv14",
+        "cctv-15": "cctv15",
+        "cctv-16": "cctv16",
+        "cctv-17": "cctv17",
+        "cetv-1": "cetv1",
+        "cetv-2": "cetv2",
+        "cetv-3": "cetv3",
+        "cetv-4": "cetv4",
+        "cctv-4美洲": "cctv4america",
+        "cctv-4欧洲": "cctv4europe",
+        "cctv-4k": "cctv4k",
+        "cctv-8k": "cctv8k",
+        "广东卫视": "guangdong",
+        "香港卫视": "hk",
+        "浙江卫视": "zhejiang",
+        "湖南卫视": "hunan",
+        "北京卫视": "beijing",
+        "湖北卫视": "hubei",
+        "黑龙江卫视": "heilongjiang",
+        "安徽卫视": "anhui",
+        "重庆卫视": "chongqing",
+        "东方卫视": "dongfang",
+        "东南卫视": "dongnan",
+        "甘肃卫视": "gansu",
+        "广西卫视": "guangxi",
+        "贵州卫视": "guizhou",
+        "海南卫视": "hainan",
+        "河北卫视": "hebei",
+        "河南卫视": "henan",
+        "吉林卫视": "jilin",
+        "江苏卫视": "jiangsu",
+        "江西卫视": "jiangxi",
+        "辽宁卫视": "liaoning",
+        "内蒙古卫视": "neimenggu",
+        "宁夏卫视": "ningxia",
+        "青海卫视": "qinghai",
+        "山东卫视": "shandong",
+        "山西卫视": "shanxi",
+        "陕西卫视": "shaanxi",
+        "四川卫视": "sichuan",
+        "深圳卫视": "shenzhen",
+        "三沙卫视": "sansha",
+        "天津卫视": "tianjin",
+        "西藏卫视": "xizang",
+        "新疆卫视": "xinjiang",
+        "云南卫视": "yunnan",
+        "广东珠江": "zhujiang",
+        "广东体育": "gdtiyu",
+        "广东新闻": "gdxinwen",
+        "广东民生": "gdminsheng",
+        "大湾区卫视": "dawanqu",
+        "广州综合": "gzzonghe",
+        "广州影视": "gzyingshi",
+        "广州竞赛": "gzjingsai",
+        "江门综合": "jmzonghe",
+        "江门侨乡生活": "jmqiaoxiang",
+        "佛山综合": "fszonghe",
+        "汕头综合": "stzonghe",
+        "汕头经济": "stjingji",
+        "汕头文旅": "stwenlv",
+        "茂名综合": "mmzonghe",
+        "茂名公共": "mmgonggong",
+        "翡翠台": "feicui",
+        "明珠台": "mingzhu",
+        "凤凰中文": "fenghuangzhongwen",
+        "凤凰香港": "fenghuangxianggang",
+        "福建文体": "fujianwenti",
+        "福建经济": "fujianjingji",
+        "无线新闻台": "wuxianxinwen",
+        "港台电视 31": "rthk31",
+        "港台电视 32": "rthk32",
+        "hoy tv": "hoytv",
+        "hoy 资讯台": "hoyzixun"
+    }
+    if n in mapping:
+        return mapping[n]
+    for key, val in mapping.items():
+        if key in n or n in key:
+            return val
+    try:
+        from pypinyin import lazy_pinyin
+        return "".join(lazy_pinyin(name))
+    except ImportError:
+        return re.sub(r'[^a-zA-Z0-9]', '', n)
+
+
 def get_channel_epg_id(name: str | None) -> str:
     """
     Get a stable channel id shared by generated M3U tvg-id and EPG channel id.
@@ -561,11 +669,11 @@ def convert_to_json_v1(path=None, content=None):
                                           + ("+" if m.group(3) else ""),
                                 original_channel_name,
                             )
-                        tvg_id = get_channel_epg_id(original_channel_name) or processed_channel_name
+                        tvg_id = get_english_name(original_channel_name)
                         
                         channel_logo = join_url(logo_url, f"{processed_channel_name}.{config.logo_type}")
                         
-                        key = (original_channel_name, current_group)
+                        key = tvg_id
                         if key not in channels_map:
                             channels_map[key] = {
                                 "name": original_channel_name,
@@ -575,7 +683,8 @@ def convert_to_json_v1(path=None, content=None):
                                 "group": current_group or "",
                                 "url": []
                             }
-                        channels_map[key]["url"].append(channel_link)
+                        if channel_link not in channels_map[key]["url"]:
+                            channels_map[key]["url"].append(channel_link)
             result = list(channels_map.values())
             
     return result
